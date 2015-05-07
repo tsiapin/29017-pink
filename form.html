@@ -28,50 +28,144 @@
     
     <div class="content-form">
     
-        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, 
-        заполните </p>
+        <p class="content-form__p">Поделитесь своей историей и получите шанс выиграть 
+        ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </p>
     
-        <form action="/echo" method="post">
+        <form class="big-form" action="/echo" method="post">
            
-            <label for="name">имя:*</label>
-            <input type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+            <label class="big-form__label" for="name">имя:*</label>
+            <input class="big-form__text-field" type="text" name="name" id="name" placeholder="Введите ваше имя" required>
             
-            <label for="surname">фамилия:*</label>
-            <input type="text" name="surname" id="surname" placeholder="Укажите фамилию" required>
+            <label class="big-form__label" for="surname">фамилия:*</label>
+            <input class="big-form__text-field" type="text" name="surname" id="surname" placeholder="Укажите фамилию" required>
             
-            <label for="patronymic">отчество:</label>
-            <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+            <label class="big-form__label" for="patronymic">отчество:</label>
+            <input class="big-form__text-field" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
             
-            <p>с каким приложением путешествовали?*</p>
+            <p class="big-form__p">с каким приложением путешествовали?*</p>
             
-            <label for="ios">Pink для iOS</label>
-            <input type="radio" name="app" id="ios" value="ios" checked>
-            <label for="android">Pink на Android</label>
-            <input type="radio" name="app" id="android" value="android">
-            <label for="winphone">Windows Phone</label>
-            <input type="radio" name="app" id="winphone" value="winphone">
+            <label class="big-form__radio-label" for="ios">Pink для iOS</label>
+            <input class="big-form__radio" type="radio" name="app" id="ios" value="ios" checked>
+            <label class="big-form__radio-label" for="android">Pink на Android</label>
+            <input class="big-form__radio" type="radio" name="app" id="android" value="android">
+            <label class="big-form__radio-label" for="winphone">Windows Phone</label>
+            <input class="big-form__radio" type="radio" name="app" id="winphone" value="winphone">
             
-            <p>когда вы путешествовали?*</p>
+            <p class="big-form__p">когда вы путешествовали?*</p>
             
-            <input type="date" name="dep-date" id="dep-date">
-            <label for="dep-date">дата выезда</label>
+            <input class="big-form__text-field" type="date" name="dep-date" id="dep-date">
+            <label class="big-form__label" for="dep-date">дата выезда</label>
             
-            <input type="number" name="days" id="days" min="1" max="20" step="1">
-            <label for="days">продолжительность</label>
+            <input class="big-form__text-field" type="number" name="days" id="days" min="1" max="20" step="1">
+            <label class="big-form__label" for="days">продолжительность</label>
             
-            <input type="date" name="arr-date" id="arr-date">
-            <label for="arr-date">дата возвращения</label>
+            <input class="big-form__text-field" type="date" name="arr-date" id="arr-date">
+            <label class="big-form__label" for="arr-date">дата возвращения</label>
             
-            <label for="companion">количество попутчиков*</label>
-            <input type="number" name="companion" id="companion" min="1" max="5" step="1" required>
+            <label class="big-form__label" for="companion">количество попутчиков*</label>
+            <input class="big-form__text-field" type="number" name="companion" id="companion" min="1" max="5" step="1" required>
             
+        <!-- дальше идет хз что, надо смотреть другие макеты-->
+        <!-- пропускаю имена и клички попутчиков -->
+           
+            <p class="big-form__p">ваши безбашенные достижения в путешествии</p>
             
+            <input class="big-form__checkbox" type="checkbox" name="selfie" id="selfie" checked>
+            <label class="big-form__checkbox-label" for="selfie">Сделал селфи с акулай</label>
             
+            <input class="big-form__checkbox" type="checkbox" name="burned" id="burned" checked>
+            <label class="big-form__checkbox-label" for="burned">Обгорел на пляже</label>
             
+            <input class="big-form__checkbox" type="checkbox" name="chuck" id="chuck">
+            <label class="big-form__checkbox-label" for="chuck">Видел Чака Норриса</label>
             
+            <input class="big-form__checkbox" type="checkbox" name="chuck" id="chuck">
+            <label class="big-form__checkbox-label" for="chuck">Накупил сувениров</label>
+            
+            <input class="big-form__checkbox" type="checkbox" name="tower" id="tower" checked>
+            <label class="big-form__checkbox-label" for="tower">Удержал башню</label>
+            
+            <input class="big-form__checkbox" type="checkbox" name="smash" id="smash">
+            <label class="big-form__checkbox-label" for="smash">Разгромил отель</label>
+            
+            <p class="big-form__p">ваши фотографии из поездки *</p>
+            
+            <input class="big-form__upload" type="file" name="trip-foto" enctype="multipart/form-data" required>
+            
+            <div class="upload-gallery__wrapper">
+                
+                <div class="upload-gallery__element">
+                    <div class="upload-gallery__img-wrapper">
+                        <img src="#" alt="" width="" height="">
+                    </div>
+                    <p class="upload-gallery__p">img-1.jpg</p>
+                    <div></div>
+                    <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
+                </div>
+                <div class="upload-gallery__element">
+                    <div class="upload-gallery__img-wrapper">
+                        <img src="#" alt="" width="" height="">
+                    </div>
+                    <p class="upload-gallery__p">img-2.jpg</p>
+                    <div></div>
+                    <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
+                </div>
+                <div class="upload-gallery__element">
+                    <div class="upload-gallery__img-wrapper">
+                        <img src="#" alt="" width="" height="">
+                    </div>
+                    <p class="upload-gallery__p">img-3.jpg</p>
+                    <div></div>
+                    <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
+                </div>
+                <div class="upload-gallery__element">
+                    <div class="upload-gallery__img-wrapper">
+                        <img src="#" alt="" width="" height="">
+                    </div>
+                    <p class="upload-gallery__p">img-4.jpg</p>
+                    <div></div>
+                    <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
+                </div>
+                <div class="upload-gallery__element">
+                    <div class="upload-gallery__img-wrapper">
+                        <img src="#" alt="" width="" height="">
+                    </div>
+                    <p class="upload-gallery__p">img-5.jpg</p>
+                    <div></div>
+                    <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
+                </div>
+                <div class="upload-gallery__element">
+                    <div class="upload-gallery__img-wrapper">
+                        <img src="#" alt="" width="" height="">
+                    </div>
+                    <p class="upload-gallery__p">img-6.jpg</p>
+                    <div></div>
+                    <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
+                </div>
+                <div class="upload-gallery__element">
+                    <div class="upload-gallery__img-wrapper">
+                        <img src="#" alt="" width="" height="">
+                    </div>
+                    <p class="upload-gallery__p">img-7.jpg</p>
+                    <div></div>
+                    <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
+                </div>
+                <div class="upload-gallery__element">
+                    <div class="upload-gallery__img-wrapper">
+                        <img src="#" alt="" width="" height="">
+                    </div>
+                    <p class="upload-gallery__p">img-8.jpg</p>
+                    <div></div>
+                    <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
+                </div>
+                
+            </div>
+            
+            <input type="submit" value="отправить форму">
             
         </form>
-         <!-- пока без форм), сейчас курс по формам перепройду и допилю тогда, чё-та подзабыл формы...-->
+        
+        <p class="content-form__p"><span class="content-form__span">* </span>- обязательные поля</p>
     
     </div>
        
