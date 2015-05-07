@@ -6,51 +6,85 @@
 </head>
 <body>
     
-    <header>
-        <div>
-            <div>
-                <a href="#"><img src="http://placehold.it/75x30" atl="main page"></a>
+    <header class="page-header">
+        <div class="clearfix">
+            <div class="page-header__logo-wrapper">
+                <a href="#" class="page-header__logo-link">
+                    <img src="http://placehold.it/75x30" atl="main page">
+                </a>
             </div>
             
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="#">информация</a></li>
-                        <li><a href="#">возможности</a></li>
-                        <li><a href="#">отзывы</a></li>
-                        <li><a href="#">стоимость</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li><a href="#">информация</a></li>
+                    <li><a href="#">возможности</a></li>
+                    <li><a href="#">отзывы</a></li>
+                    <li><a href="#">стоимость</a></li>
+                </ul>
+            </nav>
         </div>
-        <p>Конкурс на самое безбашенное путешествие с Пинк</p>
+        <h1 class="page-header__h1">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
     
-    <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, 
-    заполните </p>
+    <div class="content-form">
     
-    <form action="/echo" method="post">
-        <label>имя:*<input type="text" value="Введите ваше имя"></label>
-        <label>фамилия:*<input type="text" value="Укажите фамилию"></label>
-        <label>отчество:<input type="text" value="Ну и отчество тоже"></label>
-    </form>
-     <!-- пока без форм), сейчас курс по формам перепройду и допилю тогда, чё-та подзабыл формы...-->
-    <footer>
-        <div>
-           <img src="http://placehold.it/160x50" alt="">
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, 
+        заполните </p>
+    
+        <form action="/echo" method="post">
+           
+            <label for="name">имя:*</label>
+            <input type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+            
+            <label for="surname">фамилия:*</label>
+            <input type="text" name="surname" id="surname" placeholder="Укажите фамилию" required>
+            
+            <label for="patronymic">отчество:</label>
+            <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+            
+            <p>с каким приложением путешествовали?*</p>
+            
+            <label for="ios">Pink для iOS</label>
+            <input type="radio" name="app" id="ios" value="ios" checked>
+            <label for="android">Pink на Android</label>
+            <input type="radio" name="app" id="android" value="android">
+            <label for="winphone">Windows Phone</label>
+            <input type="radio" name="app" id="winphone" value="winphone">
+            
+            <p>когда вы путешествовали?*</p>
+            
+            <input type="date" name="dep-date" id="dep-date">
+            <label for="dep-date">дата выезда</label>
+            
+            <input type="number" name="days" id="days" min="1" max="20" step="1">
+            <label for="days">продолжительность</label>
+            
+            <input type="date" name="arr-date" id="arr-date">
+            <label for="arr-date">дата возвращения</label>
+            
+            <label for="companion">количество попутчиков*</label>
+            <input type="number" name="companion" id="companion" min="1" max="5" step="1" required>
+            
+            
+            
+            
+            
+            
+        </form>
+         <!-- пока без форм), сейчас курс по формам перепройду и допилю тогда, чё-та подзабыл формы...-->
+    
+    </div>
+       
+    <footer class="main-footer">
+        <img src="http://placehold.it/160x50" class="main-footer__logo" alt="">
+        <div class="main-footer__social-wrapper">
+            <a href="https://twitter.com" class="main-footer__social-a"><i></i></a>
+            <a href="https://fb.com" class="main-footer__social-a"></a><i></i>
+            <a href="https://youtube.com" class="main-footer__social-a"><i></i></a>
         </div>
-        <div>
-            <ul>
-                <li><a href="https://twitter.com"><i></i></a></li>
-                <li><a href="https://fb.com"></a><i></i></li>
-                <li><a href="https://youtube.com"><i></i></a></li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li>Разработано</li>
-                <li><a href="http://htmlacademy.ru"><i></i></a></li>
-            </ul>
+        <div class="main-footer__copyright-wrapper">
+            <span class="main-footer__copyright-span">Разработано</span>
+            <a href="http://htmlacademy.ru" class="main-footer__copyright-a"><i></i></a>
         </div>        
     </footer>
     

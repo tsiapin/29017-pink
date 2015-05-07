@@ -9,74 +9,76 @@
 
 <body>
    
-    <header>
-        <div>
-            <div>
-                <a href="#"><img src="http://placehold.it/75x30" atl="main page"></a>
+    <header class="page-header">
+        <div class="clearfix">
+            <div class="page-header__logo-wrapper">
+                <a href="#" class="page-header__logo-link">
+                    <img src="http://placehold.it/75x30" atl="main page">
+                </a>
             </div>
             
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="#">информация</a></li>
-                        <li><a href="#">возможности</a></li>
-                        <li><a href="#">отзывы</a></li>
-                        <li><a href="#">стоимость</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li><a href="#">информация</a></li>
+                    <li><a href="#">возможности</a></li>
+                    <li><a href="#">отзывы</a></li>
+                    <li><a href="#">стоимость</a></li>
+                </ul>
+            </nav>
         </div>
         
         <div>
-            <p>Взгляните на жизнь иначе!</p>
+            <h1 class="page-header__h1">Взгляните на жизнь иначе!</h1>
             <img src="http://placehold.it/260x300" alt="рука с айфоном">    
+        </div>
+        
+        <div class="download-panel">
+            <button type="button" class="download-panel__button">Скачать приложение</button>   
+            
+            <a href="#" class="download-panel__os-logo">
+                <img src="http://placehold.it/45x45" alt="iPhone">
+            </a>
+            
+            <a href="#" class="download-panel__os-logo">
+                <img src="http://placehold.it/45x45" alt="android">
+            </a>
+            
+            <a href="#" class="download-panel__os-logo">
+                <img src="http://placehold.it/45x45" alt="windows phone">
+            </a>
+            
+            <p class="download-panel__p">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
     </header>
     
-    <div>
+    <div class="main-content">
         <div>
-            <div>
-                <button type="button">Скачать приложение</button>   
-            </div>
-            
-            <div>
-                <img src="http://placehold.it/45x45" alt="iPhone">
-            </div>
-            
-            <div>
-                <img src="http://placehold.it/45x45" alt="android">
-            </div>
-            
-            <div>
-                <img src="http://placehold.it/45x45" alt="windows phone">
-            </div>
-            
-            <P>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</P>
+            <h2>Устали от серости мегаполиса?</h2>
+            <h2>Нам есть, что вам предложить</h2>
         </div>
         
-        <div>
-            <p>Устали от серости мегаполиса?</p>
-            <p>Нам есть, что вам предложить</p>
+        <div class="index-information">
+            <section class="index-information__section">
+                <h3 class="index-information__h3">Поднимает настроение</h3>
+                <p class="index-information__p">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+            </section>
+            <section class="index-information__section">
+                <h3 class="index-information__h3">Меняет мир вокруг</h3>
+                <p class="index-information__p">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </section>
+            <section class="index-information__section">
+                <h3 class="index-information__h3">Заводит новых друзей</h3>
+                <p class="index-information__p">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </section>
+            <!-- бэграундом айфон "всем привет"-->
         </div>
         
-        <div>
-            <h4>Поднимает настроение</h4>
-            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
-            <h4>Меняет мир вокруг</h4>
-            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            <h4>Заводит новых друзей</h4>
-            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            <div>
-                <img src="http://placehold.it/155x280" alt="улыбающийся айфон">
-            </div>
-        </div>
-        
-        <div>
-            <cite>Николай Петров</cite>
-            <blockquote>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+        <div class="index-review">
+            <cite class="index-review__cite">Николай Петров</cite>
+            <blockquote class="index-review__blockquote">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
             А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
             <div>
-                <ul>
+                <ul class="index-review__list">
                     <li></li>
                     <li></li>
                     <li></li>
@@ -84,12 +86,12 @@
             </div>
         </div>
         
-        <div>
-            <table>
-                <tr>
+        <div class="index-price">
+            <table class="index-price__table">
+                <tr class="index-price__table-tr-first">
                     <td>
-                        <span>БАЗА</span>
-                        <span>1,99 USD</span>
+                        <span class="index-price__span-tariff">БАЗА</span>
+                        <span class="index-price__span-price">1,99 USD</span>
                     </td>
                     <td>
                         <span>СТАНДАРТ</span>
@@ -117,8 +119,8 @@
                 </tr>
             </table>
             
-            <div>
-                <ul>
+            <div class="index-price__list-wrapper">
+                <ul class="index-price__list">
                     <li></li>
                     <li></li>
                     <li></li>
@@ -127,39 +129,33 @@
         </div>
         
     </div>
-    <address>
-        <p>Остались вопросы? Свяжитесь с нами!</p>
-        <p>
-            <span>Звоните:</span>
-            <span>+7(812)555-66-66</span>
-        </p>
-        <p>
-            <span>Пишите:</span>
-            <span>mail@htmlacademy.ru</span>
-        </p>
-        <p>
-            <span>Приезжайте в гости:</span>
-            <span>ул. Большая Конюшевская, 19/8</span>
-        </p>
-    </address>
+    <footer class="index-footer">
+        <h2 class="index-footer__h2">Остались вопросы? Свяжитесь с нами!</h2>
+        
+        <div class="index-footer__contacts">
+            <p class="index-footer__contacts-p">
+                <span class="index-footer__contacts-action">Звоните:</span>
+                <span>+7(812)555-66-66</span>
+            </p>
+            <p class="index-footer__contacts-p">
+                <span class="index-footer__contacts-action">Пишите:</span>
+                <span>mail@htmlacademy.ru</span>
+            </p>
+            <p class="index-footer__contacts-p">
+                <span class="index-footer__contacts-action">Приезжайте в гости:</span>
+                <span>ул. Большая Конюшевская, 19/8</span>
+            </p>
+        </div>
     
-    <div>
-        <div>
+        <div class="index-footer__map-wrapper">
             <img src="http://placehold.it/320x200" alt=""> 
-            <!-- map -->
-        </div>
-        <div>
-            <img src="http://placehold.it/320x30" alt="">
-            <!-- треугольник налегает на карту сверху -->
-        </div>
-        <div>
-            <img src="http://placehold.it/20x0" alt="">
+            <!-- карта будет гуглокартой с псевдоэлементом белым треугольником -->
+            <img class="index-footer__map-point" src="http://placehold.it/20x0" alt="">
             <!-- точка-отметка на карте -->
         </div>
-    </div>
+    </footer>
   
-
-  <!-- <script src="js/script.js"></script> -->
+    <!-- <script src="js/script.js"></script> -->
 
 </body>
 </html>
