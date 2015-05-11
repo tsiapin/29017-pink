@@ -16,10 +16,10 @@
             
             <nav class="main-nav">
                 <ul class="main-nav__list">
-                    <li class="main-nav__item"><a href="#">информация</a></li>
-                    <li class="main-nav__item"><a href="#">возможности</a></li>
-                    <li class="main-nav__item"><a href="#">отзывы</a></li>
-                    <li class="main-nav__item"><a href="#">стоимость</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">информация</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">возможности</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">отзывы</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">стоимость</a></li>
                 </ul>
             </nav>
         </div>
@@ -94,72 +94,72 @@
             
             <input class="form__upload" type="file" name="trip-foto" enctype="multipart/form-data" required>
             
-            <div class="upload-gallery__wrapper">
+            <div class="gallery-item__wrapper">
                 
-                <div class="upload-gallery__element">
-                    <div class="upload-gallery__img-wrapper">
+                <figure class="gallery-item">
+                    <div class="gallery-item__img-wrapper">
                         <img src="#" alt="" width="" height="">
                     </div>
-                    <p class="upload-gallery__text">img-1.jpg</p>
-                    <div></div>
+                    <figcaption class="gallery-item__name">img-1.jpg</figcaption>
+                    <div class="gallery-item__close"></div>
                     <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
-                </div>
-                <div class="upload-gallery__element">
-                    <div class="upload-gallery__img-wrapper">
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-item__img-wrapper">
                         <img src="#" alt="" width="" height="">
                     </div>
-                    <p class="upload-gallery__text">img-2.jpg</p>
-                    <div></div>
+                    <figcaption class="gallery-item__name">img-2.jpg</figcaption>
+                    <div class="gallery-item__close"></div>
                     <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
-                </div>
-                <div class="upload-gallery__element">
-                    <div class="upload-gallery__img-wrapper">
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-item__img-wrapper">
                         <img src="#" alt="" width="" height="">
                     </div>
-                    <p class="upload-gallery__text">img-3.jpg</p>
-                    <div></div>
+                    <figcaption class="gallery-item__name">img-3.jpg</figcaption>
+                    <div class="gallery-item__close"></div>
                     <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
-                </div>
-                <div class="upload-gallery__element">
-                    <div class="upload-gallery__img-wrapper">
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-item__img-wrapper">
                         <img src="#" alt="" width="" height="">
                     </div>
-                    <p class="upload-gallery__text">img-4.jpg</p>
-                    <div></div>
+                    <figcaption class="gallery-item__name">img-4.jpg</figcaption>
+                    <div class="gallery-item__close"></div>
                     <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
-                </div>
-                <div class="upload-gallery__element">
-                    <div class="upload-gallery__img-wrapper">
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-item__img-wrapper">
                         <img src="#" alt="" width="" height="">
                     </div>
-                    <p class="upload-gallery__text">img-5.jpg</p>
-                    <div></div>
+                    <figcaption class="gallery-item__name">img-5.jpg</figcaption>
+                    <div class="gallery-item__close"></div>
                     <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
-                </div>
-                <div class="upload-gallery__element">
-                    <div class="upload-gallery__img-wrapper">
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-item__img-wrapper">
                         <img src="#" alt="" width="" height="">
                     </div>
-                    <p class="upload-gallery__text">img-6.jpg</p>
-                    <div></div>
+                    <figcaption class="gallery-item__name">img-6.jpg</figcaption>
+                    <div class="gallery-item__close"></div>
                     <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
-                </div>
-                <div class="upload-gallery__element">
-                    <div class="upload-gallery__img-wrapper">
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-item__img-wrapper">
                         <img src="#" alt="" width="" height="">
                     </div>
-                    <p class="upload-gallery__text">img-7.jpg</p>
-                    <div></div>
+                    <figcaption class="gallery-item__name">img-7.jpg</figcaption>
+                    <div class="gallery-item__close"></div>
                     <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
-                </div>
-                <div class="upload-gallery__element">
-                    <div class="upload-gallery__img-wrapper">
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-item__img-wrapper">
                         <img src="#" alt="" width="" height="">
                     </div>
-                    <p class="upload-gallery__text">img-8.jpg</p>
-                    <div></div>
+                    <figcaption class="gallery-item__name">img-8.jpg</figcaption>
+                    <div class="gallery-item__close"></div>
                     <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
-                </div>
+                </figure>
                 
             </div>
             
@@ -174,9 +174,9 @@
     <footer class="main-footer">
         <img src="http://placehold.it/160x50" class="main-footer__logo" alt="">
         <div class="main-footer__social-wrapper">
-            <a href="https://twitter.com" class="social-btn"><i></i></a>
-            <a href="https://fb.com" class="social-btn"></a><i></i>
-            <a href="https://youtube.com" class="social-btn"><i></i></a>
+            <a href="https://twitter.com" class="social-btn--twitter"><i></i></a>
+            <a href="https://fb.com" class="social-btn--facebook"></a><i></i>
+            <a href="https://youtube.com" class="social-btn--youtube"><i></i></a>
         </div>
         <div class="main-footer__copyright-wrapper">
             <span class="main-footer__copyright-span">Разработано</span>
