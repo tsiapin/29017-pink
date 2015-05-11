@@ -8,10 +8,156 @@
 </head>
 
 <body>
-
-  <p>Репозиторий создан для обучения на продвинутом онлайн-интенсиве «<a href="https://htmlacademy.ru/advanced_intensive">Создание веб-интерфейсов с помощью HTML и CSS</a>».</p>
-
-  <!-- <script src="js/script.js"></script> -->
+   
+    <header class="page-header">
+        <div class="clearfix">
+            <div class="page-header__logo-wrapper">
+                <a href="#" class="page-header__logo-link">
+                    <img src="http://placehold.it/75x30" atl="main page">
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">информация</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">возможности</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">отзывы</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">стоимость</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div>
+            <div class="page-header__title">
+                Взгляните на жизнь иначе!
+            </div>
+            <img src="http://placehold.it/260x300" alt="рука с айфоном">    
+        </div>
+        
+        <div class="download">
+            <button type="button" class="download__button">Скачать приложение</button>   
+            
+            <a href="#" class="download__os-logo">
+                <img src="http://placehold.it/45x45" alt="iPhone">
+            </a>
+            
+            <a href="#" class="download__os-logo">
+                <img src="http://placehold.it/45x45" alt="android">
+            </a>
+            
+            <a href="#" class="download__os-logo">
+                <img src="http://placehold.it/45x45" alt="windows phone">
+            </a>
+            
+            <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+    </header>
+    
+    <div class="main-content">
+        <div>
+            <h1 class="main-content__title">Устали от серости мегаполиса?</h1>
+            <h1 class="main-content__title">Нам есть, что вам предложить</h1>
+        </div>
+        
+        <div class="information-item__wrapper">
+            <section class="information-item">
+                <h2 class="information-item__title">Поднимает настроение</h2>
+                <p class="information-item__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+            </section>
+            <section class="information-item">
+                <h2 class="information-item__title">Меняет мир вокруг</h2>
+                <p class="information-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </section>
+            <section class="information-item">
+                <h2 class="information-item__title">Заводит новых друзей</h2>
+                <p class="information-item__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </section>
+            <!-- бэграундом айфон "всем привет"-->
+        </div>
+        
+        <div class="index-review">
+            <cite class="index-review__name">Николай Петров</cite>
+            <blockquote class="index-review__quote">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+            А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
+            <div>
+                <ul class="index-review__list">
+                    <li class="index-review__item"></li>
+                    <li class="index-review__item"></li>
+                    <li class="index-review__item"></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="index-price">
+            <table class="index-price__table">
+                <tr class="index-price__table-tr-first">
+                    <td>
+                        <span class="index-price__span-tariff">БАЗА</span>
+                        <span class="index-price__span-price">1,99 USD</span>
+                    </td>
+                    <td>
+                        <span class="index-price__span-tariff">СТАНДАРТ</span>
+                        <span class="index-price__span-price">3,99 USD</span>
+                    </td>
+                    <td>
+                        <span class="index-price__span-tariff">АНЛИМ</span>
+                        <span class="index-price__span-price">9,99 USD</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>розовый фильтр</td>
+                    <td>розовый фильтр</td>
+                    <td>розовый фильтр</td>
+                </tr>
+                <tr>
+                    <td>смайлики</td>
+                    <td>смайлики</td>
+                    <td>смайлики</td>
+                </tr>
+                <tr>
+                    <td>комментарии</td>
+                    <td>комментарии</td>
+                    <td>комментарии</td>
+                </tr>
+            </table>
+            
+            <div class="index-price__list-wrapper">
+                <ul class="index-price__list">
+                    <li class="index-price__item"></li>
+                    <li class="index-price__item"></li>
+                    <li class="index-price__item"></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <footer class="index-footer">
+        <h3 class="index-footer__title">Остались вопросы? Свяжитесь с нами!</h3>
+        
+        <div class="index-footer__contacts-wrapper">
+            <p class="index-footer__contacts">
+                <p class="index-footer__contacts-title">Звоните:</p>
+                <p class="index-footer__contacts-text">+7(812)555-66-66</p>
+            </p>
+            <p class="index-footer__contacts">
+                <p class="index-footer__contacts-title">Пишите:</p>
+                <p class="index-footer__contacts-text">mail@htmlacademy.ru</p>
+            </p>
+            <p class="index-footer__contacts">
+                <p class="index-footer__contacts-title">Приезжайте в гости:</p>
+                <p class="index-footer__contacts-text">ул. Большая Конюшевская, 19/8</p>
+            </p>
+        </div>
+    
+        <div class="index-footer__map-wrapper">
+            <img src="http://placehold.it/320x200" alt=""> 
+            <!-- карта будет гуглокартой с псевдоэлементом белым треугольником -->
+            <img class="index-footer__map-point" src="http://placehold.it/20x0" alt="">
+            <!-- точка-отметка на карте -->
+        </div>
+    </footer>
+  
+    <!-- <script src="js/script.js"></script> -->
 
 </body>
 </html>

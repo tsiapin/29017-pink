@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>PINK-form</title>
+</head>
+<body>
+    
+    <header class="page-header">
+        <div class="clearfix">
+            <div class="page-header__logo-wrapper">
+                <a href="#" class="page-header__logo-link">
+                    <img src="http://placehold.it/75x30" atl="main page">
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">информация</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">возможности</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">отзывы</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">стоимость</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="page-header__title">
+            Конкурс на самое безбашенное путешествие с Пинк
+        </div>
+    </header>
+    
+    <div class="content-form">
+    
+        <p class="content-form__text">Поделитесь своей историей и получите шанс выиграть 
+        ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </p>
+    
+        <form class="form" action="/echo" method="post">
+           
+            <label class="form__label" for="name">имя:*</label>
+            <input class="form__text-field" type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+            
+            <label class="form__label" for="surname">фамилия:*</label>
+            <input class="form__text-field" type="text" name="surname" id="surname" placeholder="Укажите фамилию" required>
+            
+            <label class="form__label" for="patronymic">отчество:</label>
+            <input class="form__text-field" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+            
+            <p class="form__text">с каким приложением путешествовали?*</p>
+            
+            <label class="form__radio-label" for="ios">Pink для iOS</label>
+            <input class="form__radio" type="radio" name="app" id="ios" value="ios" checked>
+            <label class="form__radio-label" for="android">Pink на Android</label>
+            <input class="form__radio" type="radio" name="app" id="android" value="android">
+            <label class="form__radio-label" for="winphone">Windows Phone</label>
+            <input class="form__radio" type="radio" name="app" id="winphone" value="winphone">
+            
+            <p class="form__text">когда вы путешествовали?*</p>
+            
+            <input class="form__text-field" type="date" name="dep-date" id="dep-date">
+            <label class="form__label" for="dep-date">дата выезда</label>
+            
+            <input class="form__text-field" type="number" name="days" id="days" min="1" max="20" step="1">
+            <label class="form__label" for="days">продолжительность</label>
+            
+            <input class="form__text-field" type="date" name="arr-date" id="arr-date">
+            <label class="form__label" for="arr-date">дата возвращения</label>
+            
+            <label class="form__label" for="companion">количество попутчиков*</label>
+            <input class="form__text-field" type="number" name="companion" id="companion" min="1" max="5" step="1" required>
+            
+        <!-- дальше идет хз что, надо смотреть другие макеты-->
+        <!-- пропускаю имена и клички попутчиков -->
+           
+            <p class="form__text">ваши безбашенные достижения в путешествии</p>
+            
+            <input class="form__checkbox" type="checkbox" name="selfie" id="selfie" checked>
+            <label class="form__checkbox-label" for="selfie">Сделал селфи с акулай</label>
+            
+            <input class="form__checkbox" type="checkbox" name="burned" id="burned" checked>
+            <label class="form__checkbox-label" for="burned">Обгорел на пляже</label>
+            
+            <input class="form__checkbox" type="checkbox" name="chuck" id="chuck">
+            <label class="form__checkbox-label" for="chuck">Видел Чака Норриса</label>
+            
+            <input class="form__checkbox" type="checkbox" name="chuck" id="chuck">
+            <label class="form__checkbox-label" for="chuck">Накупил сувениров</label>
+            
+            <input class="form__checkbox" type="checkbox" name="tower" id="tower" checked>
+            <label class="form__checkbox-label" for="tower">Удержал башню</label>
+            
+            <input class="form__checkbox" type="checkbox" name="smash" id="smash">
+            <label class="form__checkbox-label" for="smash">Разгромил отель</label>
+            
+            <p class="form__text">ваши фотографии из поездки *</p>
+            
+            <input class="form__upload" type="file" name="trip-foto" enctype="multipart/form-data" required>
+            
+            <div class="gallery-item__wrapper">
+                
+                <figure class="gallery-item">
+                    <div class="gallery-item__img-wrapper">
+                        <img src="#" alt="" width="" height="">
+                    </div>
+                    <figcaption class="gallery-item__name">img-1.jpg</figcaption>
+                    <div class="gallery-item__close"></div>
+                    <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-item__img-wrapper">
+                        <img src="#" alt="" width="" height="">
+                    </div>
+                    <figcaption class="gallery-item__name">img-2.jpg</figcaption>
+                    <div class="gallery-item__close"></div>
+                    <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-item__img-wrapper">
+                        <img src="#" alt="" width="" height="">
+                    </div>
+                    <figcaption class="gallery-item__name">img-3.jpg</figcaption>
+                    <div class="gallery-item__close"></div>
+                    <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-item__img-wrapper">
+                        <img src="#" alt="" width="" height="">
+                    </div>
+                    <figcaption class="gallery-item__name">img-4.jpg</figcaption>
+                    <div class="gallery-item__close"></div>
+                    <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-item__img-wrapper">
+                        <img src="#" alt="" width="" height="">
+                    </div>
+                    <figcaption class="gallery-item__name">img-5.jpg</figcaption>
+                    <div class="gallery-item__close"></div>
+                    <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-item__img-wrapper">
+                        <img src="#" alt="" width="" height="">
+                    </div>
+                    <figcaption class="gallery-item__name">img-6.jpg</figcaption>
+                    <div class="gallery-item__close"></div>
+                    <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-item__img-wrapper">
+                        <img src="#" alt="" width="" height="">
+                    </div>
+                    <figcaption class="gallery-item__name">img-7.jpg</figcaption>
+                    <div class="gallery-item__close"></div>
+                    <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-item__img-wrapper">
+                        <img src="#" alt="" width="" height="">
+                    </div>
+                    <figcaption class="gallery-item__name">img-8.jpg</figcaption>
+                    <div class="gallery-item__close"></div>
+                    <!-- пустой див для крестика закрытия предварительного просмотра подгружаемых фотографий -->
+                </figure>
+                
+            </div>
+            
+            <input type="submit" class="form__button" value="отправить форму">
+            
+        </form>
+        
+        <p class="content-form__text"><span class="content-form__span">* </span>- обязательные поля</p>
+    
+    </div>
+       
+    <footer class="main-footer">
+        <img src="http://placehold.it/160x50" class="main-footer__logo" alt="">
+        <div class="main-footer__social-wrapper">
+            <a href="https://twitter.com" class="social-btn--twitter"><i></i></a>
+            <a href="https://fb.com" class="social-btn--facebook"></a><i></i>
+            <a href="https://youtube.com" class="social-btn--youtube"><i></i></a>
+        </div>
+        <div class="main-footer__copyright-wrapper">
+            <span class="main-footer__copyright-span">Разработано</span>
+            <a href="http://htmlacademy.ru" class="main-footer__copyright-a"><i></i></a>
+        </div>        
+    </footer>
+    
+</body>
+</html>
