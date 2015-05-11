@@ -19,69 +19,71 @@
             
             <nav class="main-nav">
                 <ul class="main-nav__list">
-                    <li><a href="#">информация</a></li>
-                    <li><a href="#">возможности</a></li>
-                    <li><a href="#">отзывы</a></li>
-                    <li><a href="#">стоимость</a></li>
+                    <li class="main-nav__item"><a href="#">информация</a></li>
+                    <li class="main-nav__item"><a href="#">возможности</a></li>
+                    <li class="main-nav__item"><a href="#">отзывы</a></li>
+                    <li class="main-nav__item"><a href="#">стоимость</a></li>
                 </ul>
             </nav>
         </div>
         
         <div>
-            <h1 class="page-header__h1">Взгляните на жизнь иначе!</h1>
+            <div class="page-header__title">
+                Взгляните на жизнь иначе!
+            </div>
             <img src="http://placehold.it/260x300" alt="рука с айфоном">    
         </div>
         
-        <div class="download-panel">
-            <button type="button" class="download-panel__button">Скачать приложение</button>   
+        <div class="download">
+            <button type="button" class="download__button">Скачать приложение</button>   
             
-            <a href="#" class="download-panel__os-logo">
+            <a href="#" class="download__os-logo">
                 <img src="http://placehold.it/45x45" alt="iPhone">
             </a>
             
-            <a href="#" class="download-panel__os-logo">
+            <a href="#" class="download__os-logo">
                 <img src="http://placehold.it/45x45" alt="android">
             </a>
             
-            <a href="#" class="download-panel__os-logo">
+            <a href="#" class="download__os-logo">
                 <img src="http://placehold.it/45x45" alt="windows phone">
             </a>
             
-            <p class="download-panel__p">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
     </header>
     
     <div class="main-content">
         <div>
-            <h2>Устали от серости мегаполиса?</h2>
-            <h2>Нам есть, что вам предложить</h2>
+            <h1 class="main-content__title">Устали от серости мегаполиса?</h1>
+            <h1 class="main-content__title">Нам есть, что вам предложить</h1>
         </div>
         
-        <div class="index-information">
-            <section class="index-information__section">
-                <h3 class="index-information__h3">Поднимает настроение</h3>
-                <p class="index-information__p">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+        <div class="information-item">
+            <section class="information-item__section">
+                <h2 class="information-item__title">Поднимает настроение</h2>
+                <p class="information-item__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
             </section>
-            <section class="index-information__section">
-                <h3 class="index-information__h3">Меняет мир вокруг</h3>
-                <p class="index-information__p">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <section class="information-item__section">
+                <h2 class="information-item__title">Меняет мир вокруг</h2>
+                <p class="information-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </section>
-            <section class="index-information__section">
-                <h3 class="index-information__h3">Заводит новых друзей</h3>
-                <p class="index-information__p">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <section class="information-item__section">
+                <h2 class="information-item__title">Заводит новых друзей</h2>
+                <p class="information-item__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </section>
             <!-- бэграундом айфон "всем привет"-->
         </div>
         
         <div class="index-review">
-            <cite class="index-review__cite">Николай Петров</cite>
-            <blockquote class="index-review__blockquote">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+            <cite class="index-review__name">Николай Петров</cite>
+            <blockquote class="index-review__quote">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
             А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
             <div>
                 <ul class="index-review__list">
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="index-review__item"></li>
+                    <li class="index-review__item"></li>
+                    <li class="index-review__item"></li>
                 </ul>
             </div>
         </div>
@@ -94,12 +96,12 @@
                         <span class="index-price__span-price">1,99 USD</span>
                     </td>
                     <td>
-                        <span>СТАНДАРТ</span>
-                        <span>3,99 USD</span>
+                        <span class="index-price__span-tariff">СТАНДАРТ</span>
+                        <span class="index-price__span-price">3,99 USD</span>
                     </td>
                     <td>
-                        <span>АНЛИМ</span>
-                        <span>9,99 USD</span>
+                        <span class="index-price__span-tariff">АНЛИМ</span>
+                        <span class="index-price__span-price">9,99 USD</span>
                     </td>
                 </tr>
                 <tr>
@@ -121,29 +123,29 @@
             
             <div class="index-price__list-wrapper">
                 <ul class="index-price__list">
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="index-price__item"></li>
+                    <li class="index-price__item"></li>
+                    <li class="index-price__item"></li>
                 </ul>
             </div>
         </div>
         
     </div>
     <footer class="index-footer">
-        <h2 class="index-footer__h2">Остались вопросы? Свяжитесь с нами!</h2>
+        <h3 class="index-footer__title">Остались вопросы? Свяжитесь с нами!</h3>
         
-        <div class="index-footer__contacts">
-            <p class="index-footer__contacts-p">
-                <span class="index-footer__contacts-action">Звоните:</span>
-                <span>+7(812)555-66-66</span>
+        <div class="index-footer__contacts-wrapper">
+            <p class="index-footer__contacts">
+                <p class="index-footer__contacts-title">Звоните:</p>
+                <p class="index-footer__contacts-text">+7(812)555-66-66</p>
             </p>
-            <p class="index-footer__contacts-p">
-                <span class="index-footer__contacts-action">Пишите:</span>
-                <span>mail@htmlacademy.ru</span>
+            <p class="index-footer__contacts">
+                <p class="index-footer__contacts-title">Пишите:</p>
+                <p class="index-footer__contacts-text">mail@htmlacademy.ru</p>
             </p>
-            <p class="index-footer__contacts-p">
-                <span class="index-footer__contacts-action">Приезжайте в гости:</span>
-                <span>ул. Большая Конюшевская, 19/8</span>
+            <p class="index-footer__contacts">
+                <p class="index-footer__contacts-title">Приезжайте в гости:</p>
+                <p class="index-footer__contacts-text">ул. Большая Конюшевская, 19/8</p>
             </p>
         </div>
     
