@@ -4,49 +4,53 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: pink</title>
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
    
     <header class="page-header">
-        <div class="clearfix">
-            <div class="page-header__logo-wrapper">
-                <a href="#" class="page-header__logo-link">
-                    <img src="http://placehold.it/75x30" atl="main page">
-                </a>
-            </div>
+        <div class="page-header__background-photo">
+            <div class="page-header__top-menu clearfix">
+                <div class="page-header__logo-wrapper">
+                    <a href="#" class="page-header__logo-link">
+                        <img src="img/header_logo.png" atl="main page" width="74" height="23">
+                    </a>
+                </div>
             
-            <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">информация</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">возможности</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">отзывы</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">стоимость</a></li>
-                </ul>
-            </nav>
-        </div>
+                <nav class="main-nav">
+                    <img src="img/header_menu_open.png" width="50" height="24">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">информация</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">возможности</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">отзывы</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">стоимость</a></li>
+                    </ul>
+                </nav>
+            </div>
         
-        <div>
+            <div>
             <div class="page-header__title">
                 Взгляните на жизнь иначе!
+                </div>
+                <!-- <img src="http://placehold.it/260x300" alt="рука с айфоном">    -->
             </div>
-            <img src="http://placehold.it/260x300" alt="рука с айфоном">    
         </div>
         
         <div class="download">
             <button type="button" class="download__button">Скачать приложение</button>   
             
             <a href="#" class="download__os-logo">
-                <img src="http://placehold.it/45x45" alt="iPhone">
+                <img src="img/download_apple.png" alt="iPhone">
             </a>
             
             <a href="#" class="download__os-logo">
-                <img src="http://placehold.it/45x45" alt="android">
+                <img src="img/download_android.png" alt="android">
             </a>
             
             <a href="#" class="download__os-logo">
-                <img src="http://placehold.it/45x45" alt="windows phone">
+                <img src="img/download_microsoft.png" alt="windows phone">
             </a>
             
             <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -54,7 +58,7 @@
     </header>
     
     <div class="main-content">
-        <div>
+        <div class="main-content__title-wrapper">
             <h1 class="main-content__title">Устали от серости мегаполиса?</h1>
             <h1 class="main-content__title">Нам есть, что вам предложить</h1>
         </div>
@@ -72,7 +76,9 @@
                 <h2 class="information-item__title">Заводит новых друзей</h2>
                 <p class="information-item__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </section>
-            <!-- бэграундом айфон "всем привет"-->
+            <div class="information-item__bg-div">
+                <!-- iphone background -->
+            </div>
         </div>
         
         <div class="index-review">

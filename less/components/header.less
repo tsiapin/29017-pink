@@ -1,0 +1,90 @@
+.page-header{
+    background-color: @header-bg;
+    color: @header-text;
+    
+    &__background-photo{
+        min-height: 460px;
+        background-image:
+            url("../img/header_background_hand.png"),
+            url("../img/header_background.jpg");
+        background-repeat: no-repeat;
+        background-position:
+            left bottom -30px,
+            center center;
+        }   
+    &__top-menu{
+        min-height: 65px;        
+        background-color:rgba(0, 0, 0, 0.3);
+        padding-top: 20px;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    &__logo-wrapper{
+        float: left;    
+    }
+    &__logo-link{
+        text-decoration:none;   
+    }
+    &__title{
+        font-size: 24px;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    
+}
+.main-nav{
+    float:right;
+    
+    &__list{
+        display: none;
+    }
+    &__item{
+    
+    }
+    &__link{
+        text-decoration:none;
+    }
+}
+.download{
+    font-size:0;
+    padding-top:30px;
+    padding-bottom: 30px;
+    padding-left: 6%;
+    padding-right: 6%;
+    
+    &__button{
+        display: block;
+        width: 100%;
+        padding-bottom: 12px;
+        padding-top: 12px;
+        padding-left: 35px;
+        padding-right: 35px;
+        margin-bottom: 30px;
+        background-color: @header-bg;
+        border: 3px solid white;
+        border-radius: 50px;
+        color: white;
+        font-family: @opensans;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 18px;
+    }
+    
+    &__os-logo{
+        display: inline-block;
+        vertical-align: bottom;
+        box-sizing: border-box;
+        width: 33.3%;
+        padding:0 9%;
+        
+        
+    
+    }
+    &__text{
+        font-size: 14px;
+        line-height: 24px;
+        padding-left: 25px;
+        padding-right: 25px;
+    
+    }
+}
