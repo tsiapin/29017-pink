@@ -169,16 +169,35 @@
                 <p class="index-footer__contacts-text">ул. Большая Конюшевская, 19/8</p>
             </p>
         </div>
-    
-        <div class="index-footer__map-wrapper">
-            <img src="http://placehold.it/320x200" alt=""> 
-            <!-- карта будет гуглокартой с псевдоэлементом белым треугольником -->
-            <img class="index-footer__map-point" src="http://placehold.it/20x0" alt="">
-            <!-- точка-отметка на карте -->
+        <div class="index-footer__map-cover-wrapper">
+            <div class="index-footer__map-cover"></div>
+            <div class="index-footer__map-wrapper" id="map-canvas">         
+            </div>
         </div>
     </footer>
   
-    <!-- <script src="js/script.js"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    <script>
+function initialize() {
+  var mapOptions = {
+    zoom: 17,
+    center: new google.maps.LatLng(59.9360665,30.3199866)
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'),
+                                mapOptions);
+
+  var image = "img/footer_map-point.png";
+  var myLatLng = new google.maps.LatLng(59.9360665,30.3199866);
+  var beachMarker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      icon: image
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
 
 </body>
 </html>
