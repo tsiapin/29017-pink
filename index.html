@@ -87,7 +87,7 @@
             <cite class="index-review__name">Николай Петров</cite>
             <blockquote class="index-review__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
             А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
-            <div>
+            <div class="index-review__list-wrapper">
                 <ul class="index-review__list">
                     <li class="index-review__item index-review__item--active">
                         <a class="index-review__link"></a>                        
@@ -103,42 +103,49 @@
         </div>
         
         <div class="index-price">
-            <table class="index-price__table">
-                <tr class="index-price__table-tr-first">
-                    <td>
-                        <span class="index-price__span-tariff">БАЗА</span>
-                        <span class="index-price__span-price">1,99 USD</span>
-                    </td>
-                    <td>
-                        <span class="index-price__span-tariff">СТАНДАРТ</span>
-                        <span class="index-price__span-price">3,99 USD</span>
-                    </td>
-                    <td>
-                        <span class="index-price__span-tariff">АНЛИМ</span>
-                        <span class="index-price__span-price">9,99 USD</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>розовый фильтр</td>
-                    <td>розовый фильтр</td>
-                    <td>розовый фильтр</td>
-                </tr>
-                <tr>
-                    <td>смайлики</td>
-                    <td>смайлики</td>
-                    <td>смайлики</td>
-                </tr>
-                <tr>
-                    <td>комментарии</td>
-                    <td>комментарии</td>
-                    <td>комментарии</td>
-                </tr>
-            </table>
+            <div class="index-price__table-wrapper">
+                <table class="index-price__table">
+                    <tr class="index-price__table-tr-first">
+                        <td class="index-price__table-cell">
+                            <span class="index-price__span-tariff">БАЗА</span>
+                            <span class="index-price__span-price">1,99 USD</span>
+                        </td>
+                        <td class="index-price__table-cell--best-price">
+                            <div class="index-price__table-cell--hit">
+                                <span class="index-price__span-tariff">СТАНДАРТ</span>
+                                <span class="index-price__span-price">3,99 USD</span>
+                                <div class="index-price__table-cell--hit-logo">
+                                    <img src="img/table_hit.png" alt="hit">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="index-price__table-cell">
+                            <span class="index-price__span-tariff">АНЛИМ</span>
+                            <span class="index-price__span-price">9,99 USD</span>
+                        </td>
+                    </tr>
+                    <tr class="index-price__table-tr">
+                        <td class="index-price__table-cell">розовый фильтр</td>
+                        <td class="index-price__table-cell">розовый фильтр</td>
+                        <td class="index-price__table-cell">розовый фильтр</td>
+                    </tr>
+                    <tr class="index-price__table-tr">
+                        <td class="index-price__table-cell">смайлики</td>
+                        <td class="index-price__table-cell">смайлики</td>
+                        <td class="index-price__table-cell">смайлики</td>
+                    </tr>
+                    <tr class="index-price__table-tr">
+                        <td class="index-price__table-cell">комментарии</td>
+                        <td class="index-price__table-cell">комментарии</td>
+                        <td class="index-price__table-cell">комментарии</td>
+                    </tr>
+                </table>
+            </div>
             
             <div class="index-price__list-wrapper">
                 <ul class="index-price__list">
                     <li class="index-price__item"></li>
-                    <li class="index-price__item"></li>
+                    <li class="index-price__item index-price__item--active"></li>
                     <li class="index-price__item"></li>
                 </ul>
             </div>
