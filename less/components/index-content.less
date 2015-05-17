@@ -12,8 +12,9 @@
     
     &__title{
         font-size: 24px;
+        line-height: 30px;
         margin-top: 0;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
         font-weight: lighter;
         
         &:last-child{
@@ -55,37 +56,45 @@
 }
 
 .index-review{
-    padding-top: 45px;
+    padding-top: 40px;
 
     &__name{
         font-size: 18px;
         line-height: 30px;
         font-weight: bold;
         font-style: normal;
-        padding-bottom:20px;
     }
     
     &__quote{
         font-size: 14px;
         line-height: 30px;
         margin:0;
+        padding-top:15px;
         padding-bottom:30px;
-        
-        &::before{
-            content: "&laquo;";
-        }
-        
-        &::after{
-            content: "&raquo;";
-        }
     }
     
     &__list{
-    
+        min-height: 6px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 0;
     }
     
     &__item{
-    
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5%;
+        width: 7px;
+        height: 7px;
+        background-color: @carousel-body;
+        border-radius: 50%;
+        
+        &--active{
+            background-color: @carousel-body-act;
+            border: 3px solid @carousel-border-act;
+            border-radius: 50%;
+        }
     }
 }
 
