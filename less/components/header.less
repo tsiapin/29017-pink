@@ -1,0 +1,144 @@
+.page-header{
+    background-color: @header-bg;
+    color: @header-text;
+    
+    &__background-photo{
+        min-height: 460px;
+        background-image:
+            url("../img/header_background_hand.png"),
+            url("../img/header_background.jpg");
+        background-repeat: no-repeat;
+        background-position:
+            left bottom -30px,
+            center center;
+        background-size: 
+            100%,
+            cover;
+        }   
+    &__top-menu{
+        position: relative;
+        min-height: 45px;        
+        background-color:rgba(0, 0, 0, 0.3);
+        padding-top: 20px;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    &__logo-wrapper{
+        float: left;    
+    }
+    &__logo-link{
+        text-decoration:none;   
+    }
+    &__title{
+        font-size: 24px;
+        font-weight: lighter;
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-top: 20px;
+    }
+    
+}
+
+.hamburger{
+    float:right;
+    width: 16%;
+    
+    &__button{
+        width: 100%;
+        height: 24px;
+        outline-style: none;
+        border: none;
+        background-color: transparent;
+        background-image: url("../img/header_menu_open.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border: none;
+    }
+}
+
+.main-nav{
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 65px;
+    background-color: @header-menu;
+    
+    &__list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    &__item{
+        height: 45px;
+        padding-top: 15px;
+        border-top: 1px solid @menu-bord-top;
+        border-bottom: 1px solid @menu-bord-bot;
+    }
+    
+    &__link{
+        display: block;
+        width: 100%;
+        color: white;
+        font-size: 18px;
+        line-height: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration:none;
+        
+        &:hover{
+            color: white;
+        }
+        &:active{
+            color: white;
+        }
+    }
+}
+.download{
+    font-size:0;
+    padding-top:30px;
+    padding-bottom: 30px;
+    padding-left: 6%;
+    padding-right: 6%;
+    
+    &__button{
+        display: block;
+        width: 100%;
+        padding-bottom: 12px;
+        padding-top: 12px;
+        padding-left: 35px;
+        padding-right: 35px;
+        margin-bottom: 30px;
+        outline-style: none;
+        background-color: @header-bg;
+        border: 3px solid white;
+        border-radius: 50px;
+        color: white;
+        font-family: @opensans;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 18px;
+    }
+    
+    &__os-logo{
+        display: inline-block;
+        vertical-align: bottom;
+        box-sizing: border-box;
+        width: 33.3%;
+        padding:0 9%;
+        
+        
+    
+    }
+    &__text{
+        font-size: 14px;
+        line-height: 24px;
+        margin:0;
+        padding-left: 7.8%;
+        padding-right: 7.8%;
+        padding-top: 25px;
+        font-weight:lighter;
+    
+    }
+}

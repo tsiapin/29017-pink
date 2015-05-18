@@ -4,49 +4,55 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: pink</title>
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
    
     <header class="page-header">
-        <div class="clearfix">
-            <div class="page-header__logo-wrapper">
-                <a href="#" class="page-header__logo-link">
-                    <img src="http://placehold.it/75x30" atl="main page">
-                </a>
-            </div>
+        <div class="page-header__background-photo">
+            <div class="page-header__top-menu clearfix">
+                <div class="page-header__logo-wrapper">
+                    <a href="#" class="page-header__logo-link">
+                        <img src="img/header_logo.png" atl="main page" width="74" height="23">
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <button class="hamburger__button"></button>
+                </div>
             
-            <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">информация</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">возможности</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">отзывы</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">стоимость</a></li>
-                </ul>
-            </nav>
-        </div>
+                <nav class="main-nav">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">информация</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">возможности</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">отзывы</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">стоимость</a></li>
+                    </ul>
+                </nav>
+            </div>
         
-        <div>
+            <div>
             <div class="page-header__title">
                 Взгляните на жизнь иначе!
+                </div>
+                <!-- <img src="http://placehold.it/260x300" alt="рука с айфоном">    -->
             </div>
-            <img src="http://placehold.it/260x300" alt="рука с айфоном">    
         </div>
         
         <div class="download">
             <button type="button" class="download__button">Скачать приложение</button>   
             
             <a href="#" class="download__os-logo">
-                <img src="http://placehold.it/45x45" alt="iPhone">
+                <img src="img/download_apple.png" alt="iPhone">
             </a>
             
             <a href="#" class="download__os-logo">
-                <img src="http://placehold.it/45x45" alt="android">
+                <img src="img/download_android.png" alt="android">
             </a>
             
             <a href="#" class="download__os-logo">
-                <img src="http://placehold.it/45x45" alt="windows phone">
+                <img src="img/download_microsoft.png" alt="windows phone">
             </a>
             
             <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -54,7 +60,7 @@
     </header>
     
     <div class="main-content">
-        <div>
+        <div class="main-content__title-wrapper">
             <h1 class="main-content__title">Устали от серости мегаполиса?</h1>
             <h1 class="main-content__title">Нам есть, что вам предложить</h1>
         </div>
@@ -72,59 +78,74 @@
                 <h2 class="information-item__title">Заводит новых друзей</h2>
                 <p class="information-item__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </section>
-            <!-- бэграундом айфон "всем привет"-->
+            <div class="information-item__bg-div">
+                <!-- iphone background -->
+            </div>
         </div>
         
         <div class="index-review">
             <cite class="index-review__name">Николай Петров</cite>
-            <blockquote class="index-review__quote">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-            А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
-            <div>
+            <blockquote class="index-review__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+            А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+            <div class="index-review__list-wrapper">
                 <ul class="index-review__list">
-                    <li class="index-review__item"></li>
-                    <li class="index-review__item"></li>
-                    <li class="index-review__item"></li>
+                    <li class="index-review__item index-review__item--active">
+                        <a class="index-review__link"></a>                        
+                    </li>
+                    <li class="index-review__item">
+                        <a class="index-review__link"></a>
+                    </li>
+                    <li class="index-review__item">
+                        <a class="index-review__link"></a>
+                    </li>
                 </ul>
             </div>
         </div>
         
         <div class="index-price">
-            <table class="index-price__table">
-                <tr class="index-price__table-tr-first">
-                    <td>
-                        <span class="index-price__span-tariff">БАЗА</span>
-                        <span class="index-price__span-price">1,99 USD</span>
-                    </td>
-                    <td>
-                        <span class="index-price__span-tariff">СТАНДАРТ</span>
-                        <span class="index-price__span-price">3,99 USD</span>
-                    </td>
-                    <td>
-                        <span class="index-price__span-tariff">АНЛИМ</span>
-                        <span class="index-price__span-price">9,99 USD</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>розовый фильтр</td>
-                    <td>розовый фильтр</td>
-                    <td>розовый фильтр</td>
-                </tr>
-                <tr>
-                    <td>смайлики</td>
-                    <td>смайлики</td>
-                    <td>смайлики</td>
-                </tr>
-                <tr>
-                    <td>комментарии</td>
-                    <td>комментарии</td>
-                    <td>комментарии</td>
-                </tr>
-            </table>
+            <div class="index-price__table-wrapper">
+                <table class="index-price__table">
+                    <tr class="index-price__table-tr-first">
+                        <td class="index-price__table-cell">
+                            <span class="index-price__span-tariff">БАЗА</span>
+                            <span class="index-price__span-price">1,99 USD</span>
+                        </td>
+                        <td class="index-price__table-cell--best-price">
+                            <div class="index-price__table-cell--hit">
+                                <span class="index-price__span-tariff">СТАНДАРТ</span>
+                                <span class="index-price__span-price">3,99 USD</span>
+                                <div class="index-price__table-cell--hit-logo">
+                                    <img src="img/table_hit.png" alt="hit">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="index-price__table-cell">
+                            <span class="index-price__span-tariff">АНЛИМ</span>
+                            <span class="index-price__span-price">9,99 USD</span>
+                        </td>
+                    </tr>
+                    <tr class="index-price__table-tr">
+                        <td class="index-price__table-cell">розовый фильтр</td>
+                        <td class="index-price__table-cell">розовый фильтр</td>
+                        <td class="index-price__table-cell">розовый фильтр</td>
+                    </tr>
+                    <tr class="index-price__table-tr">
+                        <td class="index-price__table-cell">смайлики</td>
+                        <td class="index-price__table-cell">смайлики</td>
+                        <td class="index-price__table-cell">смайлики</td>
+                    </tr>
+                    <tr class="index-price__table-tr">
+                        <td class="index-price__table-cell">комментарии</td>
+                        <td class="index-price__table-cell">комментарии</td>
+                        <td class="index-price__table-cell">комментарии</td>
+                    </tr>
+                </table>
+            </div>
             
             <div class="index-price__list-wrapper">
                 <ul class="index-price__list">
                     <li class="index-price__item"></li>
-                    <li class="index-price__item"></li>
+                    <li class="index-price__item index-price__item--active"></li>
                     <li class="index-price__item"></li>
                 </ul>
             </div>
@@ -148,16 +169,35 @@
                 <p class="index-footer__contacts-text">ул. Большая Конюшевская, 19/8</p>
             </p>
         </div>
-    
-        <div class="index-footer__map-wrapper">
-            <img src="http://placehold.it/320x200" alt=""> 
-            <!-- карта будет гуглокартой с псевдоэлементом белым треугольником -->
-            <img class="index-footer__map-point" src="http://placehold.it/20x0" alt="">
-            <!-- точка-отметка на карте -->
+        <div class="index-footer__map-cover-wrapper">
+            <div class="index-footer__map-cover"></div>
+            <div class="index-footer__map-wrapper" id="map-canvas">         
+            </div>
         </div>
     </footer>
   
-    <!-- <script src="js/script.js"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    <script>
+function initialize() {
+  var mapOptions = {
+    zoom: 17,
+    center: new google.maps.LatLng(59.9360665,30.3199866)
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'),
+                                mapOptions);
+
+  var image = "img/footer_map-point.png";
+  var myLatLng = new google.maps.LatLng(59.9360665,30.3199866);
+  var beachMarker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      icon: image
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
 
 </body>
 </html>
