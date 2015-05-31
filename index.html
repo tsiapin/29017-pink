@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: pink</title>
   <link rel="stylesheet" href="css/style.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
@@ -11,11 +12,15 @@
 <body>
    
     <header class="page-header">
-        <div class="page-header__background-photo">
+        <div class="page-header__background-photo--startpage">
             <div class="page-header__top-menu clearfix">
                 <div class="page-header__logo-wrapper">
                     <a href="#" class="page-header__logo-link">
-                        <img src="img/header_logo.png" atl="main page" width="74" height="23">
+                        <picture>
+                            <source media="(min-width:@desktop)" srcset="img/logotype-white-desktop.svg" width="146" height="40" alt="main page">
+                            <source media="(min-width:@tablet)" srcset="img/logotype-white-tablet.svg" width="146" height="40" alt="main page">
+                            <img src="img/logotype-white-mobile.svg" width="75" height="23" alt="main page">
+                        </picture>
                     </a>
                 </div>
                 <div class="hamburger">
@@ -33,10 +38,9 @@
             </div>
         
             <div>
-            <div class="page-header__title">
+            <div class="page-header__title page-header__title--index-page">
                 Взгляните на жизнь иначе!
                 </div>
-                <!-- <img src="http://placehold.it/260x300" alt="рука с айфоном">    -->
             </div>
         </div>
         
@@ -44,15 +48,15 @@
             <button type="button" class="download__button">Скачать приложение</button>   
             
             <a href="#" class="download__os-logo">
-                <img src="img/download_apple.png" alt="iPhone">
+                <img src="img/apple-logo.svg" width="47" height="57" alt="iPhone">
             </a>
             
             <a href="#" class="download__os-logo">
-                <img src="img/download_android.png" alt="android">
+                <img src="img/android-logo.svg" width="43" height="48" alt="android">
             </a>
             
             <a href="#" class="download__os-logo">
-                <img src="img/download_microsoft.png" alt="windows phone">
+                <img src="img/microsoft-logo.svg" width="44" height="42" alt="windows phone">
             </a>
             
             <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>

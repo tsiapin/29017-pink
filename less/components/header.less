@@ -3,22 +3,30 @@
     color: @header-text;
     
     &__background-photo{
-        min-height: 460px;
-        background-image:
-            url("../img/header_background_hand.png"),
-            url("../img/header_background.jpg");
+        background-image: url("../img/background-mobile@1x.jpg");
         background-repeat: no-repeat;
-        background-position:
-            left bottom -30px,
-            center center;
-        background-size: 
-            100%,
-            cover;
+        background-position: center;
+        background-size: cover;
+        
+        &--startpage{
+            min-height: 460px;
+            background-image:
+                url("../img/iphone-hand-mobile.png"),
+                url("../img/background-mobile@1x.jpg");
+            background-repeat: no-repeat;
+            background-position:
+                0px 100%,
+                center center;
+            background-size: auto 290px, cover;
         }   
+        
+    } 
+
+     
     &__top-menu{
         position: relative;
         min-height: 45px;        
-        background-color:rgba(0, 0, 0, 0.3);
+        background-color:rgba(0, 0, 0, 0.4);
         padding-top: 20px;
         padding-left: 6%;
         padding-right: 6%;
@@ -34,14 +42,20 @@
         font-weight: lighter;
         padding-left: 6%;
         padding-right: 6%;
-        padding-top: 20px;
+        padding-top: 28px;
+        padding-bottom: 40px;
+        
+        &--index-page{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
     }
     
 }
 
 .hamburger{
     float:right;
-    width: 16%;
+    width: 45px;
     
     &__button{
         width: 100%;
@@ -49,7 +63,7 @@
         outline-style: none;
         border: none;
         background-color: transparent;
-        background-image: url("../img/header_menu_open.png");
+        background-image: url("../img/menu-burger.svg");
         background-repeat: no-repeat;
         background-size: 100%;
         border: none;
@@ -142,3 +156,143 @@
     
     }
 }
+
+
+
+@media (min-resolution: 2dppx){
+        .page-header{
+    
+            &__background-photo{
+                background-image: url("../img/background-mobile@2x.jpg");
+            }
+            
+            &--index-page{
+                background-image:
+                    url("../img/iphone-hand-mobile@2x.png"),
+                    url("../img/background-mobile@2x.jpg");
+            }
+        }
+    
+}
+
+@media (min-resolution: 3dppx){
+        .page-header{
+    
+            &__background-photo{
+                background-image: url("../img/background-mobile@3x.jpg");
+            }
+            
+            &--index-page{
+                background-image:
+                    url("../img/iphone-hand-mobile@3x.png"),
+                    url("../img/background-mobile@3x.jpg");
+            }
+        }
+    
+}
+
+
+@media (min-width: @tablet){
+            .page-header{
+    
+            &__background-photo{
+                background-image: url("../img/background-tablet@1x.jpg");
+            }
+            
+            &--index-page{
+                background-image:
+                    url("../img/header_background_hand.png"),
+                    url("../img/background-tablet@1x.jpg");
+            }
+        }
+    
+}
+
+@media (min-width: @tablet),
+    (min-resolution: 2dppx){
+        .page-header{
+    
+            &__background-photo{
+                background-image: url("../img/background-fullsize.jpg");
+            }
+            
+            &--index-page{
+                background-image:
+                    url("../img/header_background_hand.png"),
+                    url("../img/background-fullsize.jpg");
+            }
+        }
+    
+}
+
+@media (min-width: @tablet),
+    (min-resolution: 3dppx){
+        .page-header{
+    
+            &__background-photo{
+                background-image: url("../img/background-fullsize.jpg");
+            }
+            
+            &--index-page{
+                background-image:
+                    url("../img/header_background_hand.png"),
+                    url("../img/background-fullsize.jpg");
+            }
+        }
+    
+}
+
+
+@media (min-width: @desktop){
+        .page-header{
+    
+            &__background-photo{
+                background-image: url("../img/background-fullsize.jpg");
+            }
+            
+            &--index-page{
+                background-image:
+                    url("../img/header_background_hand.png"),
+                    url("../img/background-fullsize.jpg");
+            }
+        }
+        
+}
+
+@media (min-width: @desktop),
+    (min-resolution: 2dppx){
+        .page-header{
+    
+            &__background-photo{
+                background-image: url("../img/background-fullsize.jpg");
+            }
+            
+            &--index-page{
+                background-image:
+                    url("../img/header_background_hand.png"),
+                    url("../img/background-fullsize.jpg");
+            }
+        }
+        
+    
+}
+
+@media 
+    (min-width: @desktop),
+    (min-resolution: 3dppx){
+        .page-header{
+    
+            &__background-photo{
+                background-image: url("../img/background-fullsize.jpg");
+            }
+            
+            &--index-page{
+                background-image:
+                    url("../img/header_background_hand.png"),
+                    url("../img/background-fullsize.jpg");
+            }
+        }
+        
+}
+
+
