@@ -3,11 +3,15 @@
     color: @header-text;
     
     &__background-photo{
-        min-height: 460px;
+        min-height: 200px;
         background-image: url("../img/background-mobile@1x.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; 
+        
+        &--index{
+            min-height: 460px;
+        }
     } 
 
     &__top-menu{
@@ -27,10 +31,15 @@
     &__title{
         font-size: 24px;
         font-weight: lighter;
-        padding-left: 6%;
-        padding-right: 6%;
+        padding-left: 20%;
+        padding-right: 20%;
         padding-top: 28px;
-        padding-bottom: 140px;
+        
+        &--index{
+            padding-bottom: 140px;
+            padding-left: 6%;
+            padding-right: 6%;
+        }
     }
     
 }
@@ -296,6 +305,11 @@
 @media (min-width: @desktop){
     .page-header{
         min-height: 850px;
+        
+        &__top-menu{
+            padding-right: 10%;
+            padding-left: 10%;
+        }
     
         &__background-photo{
             min-height: 850px;
@@ -314,13 +328,22 @@
     }
     
     .main-nav{
-        display: inline-block;
+        display: block;
+        position: static;
         float: right;
-        width: 52%;
+        width: 550px;
         background-color: transparent;
         
         &__item{
             display: inline-block;
+            padding-left: 3%;
+            padding-right: 3%;
+            border: none;
+        }
+        
+        &__link{
+            text-transform: none;
+            font-size: 18px;
         }
     }
     

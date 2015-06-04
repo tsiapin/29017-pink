@@ -7,29 +7,35 @@
 </head>
 <body>
     <header class="page-header">
-        <div class="page-header__background-photo">
-            <div class="page-header__top-menu clearfix">
-                <div class="page-header__logo-wrapper">
-                    <a href="#" class="page-header__logo-link">
-                        <img src="img/header_logo.png" atl="main page" width="74" height="23">
-                    </a>
+            <div class="page-header__background-photo">
+                <div class="page-header__top-menu clearfix">
+                    <div class="page-header__logo-wrapper">
+                        <a href="#" class="page-header__logo-link">
+                            <picture>
+                                <source media="(min-width: 1024px)" srcset="img/logotype-white-desktop.svg" width="150" height="45" alt="main page">
+                                <source media="(min-width: 700px)" srcset="img/logotype-white-tablet.svg" width="150" height="45" alt="main page">
+                                <img src="img/logotype-white-mobile.svg" alt="main page">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="hamburger">
+                        <button class="hamburger__button"></button>
+                    </div>
+
+                    <nav class="main-nav">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item"><a class="main-nav__link" href="#">Информация</a></li>
+                            <li class="main-nav__item"><a class="main-nav__link" href="#">Возможности</a></li>
+                            <li class="main-nav__item"><a class="main-nav__link" href="#">Отзывы</a></li>
+                            <li class="main-nav__item"><a class="main-nav__link" href="#">Стоимость</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="hamburger">
-                    <button class="hamburger__button"></button>
+
+                <div class="page-header__title">
+                    Блог путешественников, пользователей Пинк
                 </div>
-            
-                <nav class="main-nav">
-                    <ul class="main-nav__list">
-                        <li class="main-nav__item"><a class="main-nav__link" href="#">информация</a></li>
-                        <li class="main-nav__item"><a class="main-nav__link" href="#">возможности</a></li>
-                        <li class="main-nav__item"><a class="main-nav__link" href="#">отзывы</a></li>
-                        <li class="main-nav__item"><a class="main-nav__link" href="#">стоимость</a></li>
-                    </ul>
-                </nav>
             </div>
-        <div class="page-header__title">
-            Блог путешественников, пользователей Пинк
-        </div>
     </header>
     
     <div class="content-blog">
@@ -62,7 +68,7 @@
         </section>
     
         <ul class="blog-pagination">
-            <li class="blog-pagination__item"><a class="blog-pagination__link" href="#">1</a></li>
+            <li class="blog-pagination__item blog-pagination__item--active"><a class="blog-pagination__link" href="#">1</a></li>
             <li class="blog-pagination__item"><a class="blog-pagination__link" href="#">2</a></li>
             <li class="blog-pagination__item"><a class="blog-pagination__link" href="#">3</a></li>
             <li class="blog-pagination__item"><a class="blog-pagination__link" href="#">4</a></li>

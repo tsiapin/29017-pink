@@ -10,7 +10,8 @@
         margin:0;
         padding-top: 20px;
         text-align: left;
-        line-height: 25px;
+        font-size: 18px;
+        line-height: 27px;
     }
     
     &__title-link{
@@ -60,9 +61,13 @@
         display: inline-block;
         vertical-align: top;
         margin-right: 2%;
-        width: 18%;
-        min-height: 50px;
-        border: 2px solid @blog-pag;
+        width: 60px;
+        min-height: 60px;
+        border: 2px solid @blog-sec;
+        
+        &--active{
+            border-color: @blog-pag;
+        }
         
         &:last-child{
             margin-right: 0;
