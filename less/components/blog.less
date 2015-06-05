@@ -60,7 +60,6 @@
     list-style: none;
     font-size: 0;
     padding: 0;
-    padding-bottom: 60px;
     
     
     &__item{
@@ -138,5 +137,48 @@
     
     .blog-pagination{
         padding-bottom: 50px;
+    }
+}
+
+@media (min-width: @desktop){
+    .blog-item{
+        
+        &::before{
+            top: 55px;
+        }
+    
+        &__title{
+            font-size: 27px;
+            line-height: 30px;
+        }
+        
+        &__date{
+            font-size: 14px;
+            line-height: 30px;
+        }
+        
+        &__text{
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+    
+    .blog-pagination{
+        position: relative;
+        text-align: left;
+        padding-bottom: 35px;
+        
+        &::before{
+            position: absolute;
+            left: -60px;
+            top: 20px;
+            content: "СТР.";
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        &__item{
+            text-align: center;
+        }
     }
 }

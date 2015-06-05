@@ -315,7 +315,11 @@
 
 @media (min-width: @desktop){
     .page-header{
-        min-height: 850px;
+        min-height: 395px;
+        
+        &--index{
+            min-height: 850px;
+        }
         
         &__top-menu{
             padding-right: 10%;
@@ -323,14 +327,24 @@
         }
     
         &__background-photo{
-            min-height: 850px;
+            min-height: 395px;
             background-image: url("../img/background-fullsize.jpg");
+            
+            &--index{
+                min-height: 850px;
+            }
         }
         
         &__title{
-            width: 19%;
-            padding-top: 100px;
-            padding-left: 11%;
+            padding-left: 22%;
+            padding-right: 22%;
+            font-size: 50px;
+            
+            &--index{
+                width: 19%;
+                padding-top: 100px;
+                padding-left: 11%;
+            }
         }
     }
     
