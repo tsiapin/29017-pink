@@ -76,17 +76,25 @@
     </div>
         
     <footer class="main-footer">
-        <img src="http://placehold.it/160x50" class="main-footer__logo" alt="">
+        <div class="main-footer__logo-wrapper">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="img/logotype-blue-desktop.svg" alt="pink logo"> 
+                <img src="img/logotype-blue-tablet.svg" alt="pink logo" width="146" height="40">
+            </picture>
+        </div>
+            
         <div class="main-footer__social-wrapper">
-            <a href="https://twitter.com" class="social-btn--twitter"><i></i></a>
-            <a href="https://fb.com" class="social-btn--facebook"></a><i></i>
-            <a href="https://youtube.com" class="social-btn--youtube"><i></i></a>
+            <a href="https://twitter.com" class="social-btn social-btn--twitter"><i></i></a>
+            <a href="https://fb.com" class="social-btn social-btn--facebook"></a><i></i>
+            <a href="https://youtube.com" class="social-btn social-btn--youtube"><i></i></a>
         </div>
         <div class="main-footer__copyright-wrapper">
             <span class="main-footer__copyright-span">Разработано</span>
-            <a href="http://htmlacademy.ru" class="main-footer__copyright-link"><i></i></a>
+            <a href="http://htmlacademy.ru" class="main-footer__copyright-link">
+                <img src="img/htmlacademy.svg" alt="htmlacademy" width="27" height="34">
+            </a>
         </div>        
-    </footer>
+    </footer>    
     
 </body>
 </html>

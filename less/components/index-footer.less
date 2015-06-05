@@ -57,15 +57,21 @@
     
     
 }
-.main-footer{
+
+    /* следующий селектор нужен для того, чтобы на главной странице в моб. версии не появлялся футер с лого, соц.кнопками и разработчиком */
+div.main-footer{
     display: none;
+}     
+
+.main-footer{
+    display: block;
     
-    &__logo{
-        
+    &__logo-wrapper{
+        padding-bottom: 40px;
     }
         
     &__copyright-wrapper{
-        
+        padding-bottom: 45px;        
     }
         
     &__copyright-span{
@@ -73,18 +79,36 @@
     }
         
     &__copyright-link{
-        
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    &__social-wrapper{
+        vertical-align: middle;
+        text-align: center;
+        padding-bottom: 35px;
     }
 }
     
 .social-btn{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    text-decoration: none;
+    border: 3px solid @footer-social-border;
+    border-radius: 50%;
+    margin-right: 12px;
+        
+    &:last-child{
+        margin-right: 0;
+    }        
     
     &--twitter{
     }
-        
+    
     &--facebook{
     }
-        
+    
     &--youtube{
     }
 }
@@ -122,9 +146,14 @@
         }
     }
     
+/* возвращаем отображение футера с соц кнопками на главной с шириной экрана больше мобильной */
+div.main-footer{
+    display: block;
+}  
+    
     .main-footer{
         display: block;
-        min-height: 165px;
+        min-height: 90px;
         padding-top: 35px;
         padding-left: 5%;
         padding-right: 5%;
@@ -147,6 +176,7 @@
         
         &__copyright-span{
             font-size: 14px;
+            padding-right: 10px;
         }
         
         &__copyright-link{
