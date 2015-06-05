@@ -1,50 +1,122 @@
 .content-post{
-
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
 .post{
 
     &__title{
-    
+        margin: 0;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: bold;
     }
     
     &__date{
-    
+        margin: 0;
+        padding-bottom: 20px;
+        font-size: 12px;
+        line-height: 27px;
+        text-transform: uppercase;
+        color: @blog-date;
     }
     
     &__descr{
-    
+        font-size: 12px;
+        line-height: 27px;
+        margin: 0;
+        padding-bottom: 25px;
+        border-bottom: 2px solid @blog-sec;
+        
     }
     
     &__subtitle{
-    
+        text-align: left;
+        font-size: 18px;
+        line-height: 30px;
+        text-transform: uppercase;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin: 0;
     }
     
     &__text{
+        padding-bottom: 5px;
+        margin: 0;
+        text-align: left;
+        font-size: 14px;
+        line-height: 27px;
+    }
     
+    &__link{
+        color: @blog-date;
     }
     
     &__list{
+        margin: 0;
+        padding-top: 35px;
+        padding-left: 20px;
+        text-align: left;
+        color: @blog-pag;
+    }
     
+    &__list-item{
+        padding-bottom: 35px;
+    }
+    
+    &__list-item-text{
+        color: black;
     }
     
     &__quote{
+        padding-left: 6%;
+        margin: 0;
     
+    }
+    
+    &__quote-wrapper{
+        margin-top: 35px;
+        text-align: left;
+        font-size: 14px;
+        line-height: 27px;
+        border-left: 2px solid @blog-date;
     }
     
     &__name{
-    
-    }
-    
-    &__subtitle{
-    
+        padding-left: 6%;
+        font-style: italic;
     }
 }
 
 .post-pagination{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 280px;
+    min-height: 150px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
 
     &__item{
-    
+        display: inline-block;
+        width: 130px;
+        padding-top: 20px;
+        min-height: 40px;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: @blog;
+        border: 3px solid @blog-sec;
+        
+        &:last-child{
+            width:100%;
+            margin-top: 8px;
+        }
     }
 }
 
