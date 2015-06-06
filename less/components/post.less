@@ -23,13 +23,15 @@
         color: @blog-date;
     }
     
+    &__descr-wrapper{
+        border-bottom: 2px solid @blog-sec;
+    }
+    
     &__descr{
         font-size: 12px;
         line-height: 27px;
         margin: 0;
         padding-bottom: 25px;
-        border-bottom: 2px solid @blog-sec;
-        
     }
     
     &__subtitle{
@@ -128,31 +130,57 @@
     .post{
 
     &__title{
-    
+        font-size: 50px;
+        line-height: 50px;
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+        
+    &__descr-wrapper{
+        display: flex; 
+        flex-direction: column;
+        border-bottom-style: dotted;
     }
     
     &__date{
-    
+        order: 1;
+        position: relative;
+        top: 16px;
+        display: inline-block;
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 0;
+        font-size: 14px;
+        line-height: 30px;
+        background-color: white;
     }
     
     &__descr{
-    
+        order: 0;
+        font-size: 24px;
+        line-height: 40px;
     }
     
     &__subtitle{
-    
+        padding-top: 55px;
+        padding-bottom: 30px;
+        font-size: 24px;
+        line-height: 30px;
     }
     
     &__text{
-    
+        font-size: 18px;
+        line-height: 30px;
     }
     
     &__list{
     
     }
     
-    &__quote{
-    
+    &__quote-wrapper{
+        font-size: 18px;
+        line-height: 30px;
     }
     
     &__name{
@@ -165,11 +193,31 @@
 }
 
     .post-pagination{
+        margin-top: 45px;
+        width: 600px;
+        min-height: 65px;
+        flex-wrap: nowrap;
+        padding-bottom: 10px;
 
-    &__item{
-    
+        &__item{
+            width: 135px;
+            padding-top: 15px;
+            
+            &:first-child{
+                order: 0;
+            }
+            
+            &:last-child{
+                width: 295px;
+                order: 1;
+                margin-top: 0;
+            }
+            
+            &:nth-child(2){
+                order: 2;
+            }
+        }
     }
-}
 }
 
 @media (min-width: @desktop){
