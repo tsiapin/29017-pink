@@ -222,13 +222,14 @@
 
 @media (min-width: @desktop){
     .content-post{
-
+        padding-left: 10%;
+        padding-right: 10%;
 }
 
     .post{
 
     &__title{
-    
+        padding-top: 100px;
     }
     
     &__date{
@@ -236,27 +237,36 @@
     }
     
     &__descr{
-    
+        padding-left: 8%;
+        padding-right: 8%;
     }
     
     &__subtitle{
-    
+        padding-left: 7%;
+        padding-right: 7%;    
     }
     
     &__text{
-    
+        padding-left: 7%;
+        padding-right: 7%;
     }
     
     &__list{
-    
+        padding-left: 30px;
+        margin-right: 7%;
+        margin-left: 6%;
     }
     
-    &__quote{
+    &__quote-wrapper{
+        margin-left: 7%;   
+    }    
     
+    &__quote{
+        padding-left: 3%;
     }
     
     &__name{
-    
+        padding-left: 3%;
     }
     
     &__subtitle{
@@ -265,9 +275,14 @@
 }
 
     .post-pagination{
-
+        min-width: 820px;  
+        
     &__item{
-    
+        width: 254px;
+        
+        &:last-child{
+            width: 254px;
+        }
     }
 }
 
