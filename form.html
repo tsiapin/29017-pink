@@ -2,36 +2,49 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>PINK-form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PINK-post</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
     
-    <header class="page-header">
-        <div class="clearfix">
+<header class="page-header">
+    <div class="page-header__background-photo">
+        <div class="page-header__top-menu clearfix">
             <div class="page-header__logo-wrapper">
                 <a href="#" class="page-header__logo-link">
-                    <img src="http://placehold.it/75x30" atl="main page">
-                </a>
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/logotype-white-desktop.svg" width="150" height="45" alt="main page">
+                        <source media="(min-width: 700px)" srcset="img/logotype-white-tablet.svg" width="150" height="45" alt="main page">
+                        <img src="img/logotype-white-mobile.svg" alt="main page">
+                    </picture>
+               </a>
             </div>
-            
+            <div class="hamburger">
+                <button class="hamburger__button"></button>
+            </div>
+
             <nav class="main-nav">
                 <ul class="main-nav__list">
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">информация</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">возможности</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">отзывы</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">стоимость</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">Информация</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">Возможности</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">Отзывы</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">Стоимость</a></li>
                 </ul>
             </nav>
         </div>
+
         <div class="page-header__title">
             Конкурс на самое безбашенное путешествие с Пинк
         </div>
-    </header>
+    </div>
+</header>
     
     <div class="content-form">
     
         <p class="content-form__text">Поделитесь своей историей и получите шанс выиграть 
-        ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </p>
+        ценный приз — 1000 миль на вашу бонусную карту! <span class="content-form__text-hidden">Пожалуйста, заполните форму ниже:</span></p>
     
         <form class="form" action="/echo" method="post">
            
@@ -46,12 +59,14 @@
             
             <p class="form__text">с каким приложением путешествовали?*</p>
             
-            <label class="form__radio-label" for="ios">Pink для iOS</label>
             <input class="form__radio" type="radio" name="app" id="ios" value="ios" checked>
-            <label class="form__radio-label" for="android">Pink на Android</label>
+            <label class="form__radio-label" for="ios">Pink для iOS</label>
+            
             <input class="form__radio" type="radio" name="app" id="android" value="android">
-            <label class="form__radio-label" for="winphone">Windows Phone</label>
+            <label class="form__radio-label" for="android">Pink на Android</label>
+            
             <input class="form__radio" type="radio" name="app" id="winphone" value="winphone">
+            <label class="form__radio-label" for="winphone">Windows Phone</label>
             
             <p class="form__text">когда вы путешествовали?*</p>
             
@@ -73,7 +88,7 @@
             <p class="form__text">ваши безбашенные достижения в путешествии</p>
             
             <input class="form__checkbox" type="checkbox" name="selfie" id="selfie" checked>
-            <label class="form__checkbox-label" for="selfie">Сделал селфи с акулай</label>
+            <label class="form__checkbox-label" for="selfie">Сделал селфи с акулой</label>
             
             <input class="form__checkbox" type="checkbox" name="burned" id="burned" checked>
             <label class="form__checkbox-label" for="burned">Обгорел на пляже</label>
@@ -171,18 +186,26 @@
     
     </div>
        
-    <footer class="main-footer">
-        <img src="http://placehold.it/160x50" class="main-footer__logo" alt="">
-        <div class="main-footer__social-wrapper">
-            <a href="https://twitter.com" class="social-btn--twitter"><i></i></a>
-            <a href="https://fb.com" class="social-btn--facebook"></a><i></i>
-            <a href="https://youtube.com" class="social-btn--youtube"><i></i></a>
-        </div>
-        <div class="main-footer__copyright-wrapper">
-            <span class="main-footer__copyright-span">Разработано</span>
-            <a href="http://htmlacademy.ru" class="main-footer__copyright-a"><i></i></a>
-        </div>        
-    </footer>
+<footer class="main-footer">
+    <div class="main-footer__logo-wrapper">
+        <picture>
+            <source media="(min-width: 1024px)" srcset="img/logotype-blue-desktop.svg" alt="pink logo"> 
+            <img src="img/logotype-blue-tablet.svg" alt="pink logo" width="146" height="40">
+        </picture>
+    </div>
+            
+    <div class="main-footer__social-wrapper">
+        <a href="https://twitter.com" class="social-btn social-btn--twitter"><i></i></a>
+        <a href="https://fb.com" class="social-btn social-btn--facebook"></a><i></i>
+        <a href="https://youtube.com" class="social-btn social-btn--youtube"><i></i></a>
+    </div>
+    <div class="main-footer__copyright-wrapper">
+        <span class="main-footer__copyright-span">Разработано</span>
+        <a href="http://htmlacademy.ru" class="main-footer__copyright-link">
+            <img src="img/htmlacademy.svg" alt="htmlacademy" width="27" height="34">
+        </a>
+    </div>        
+</footer>
     
 </body>
 </html>
