@@ -3,61 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>PINK-blog</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="page-header">
-        <div class="clearfix">
-            <div class="page-header__logo-wrapper">
-                <a href="#" class="page-header__logo-link">
-                    <img src="http://placehold.it/75x30" atl="main page">
-                </a>
+            <div class="page-header__background-photo">
+                <div class="page-header__top-menu clearfix">
+                    <div class="page-header__logo-wrapper">
+                        <a href="#" class="page-header__logo-link">
+                            <picture>
+                                <source media="(min-width: 1024px)" srcset="img/logotype-white-desktop.svg" width="150" height="45" alt="main page">
+                                <source media="(min-width: 700px)" srcset="img/logotype-white-tablet.svg" width="150" height="45" alt="main page">
+                                <img src="img/logotype-white-mobile.svg" alt="main page">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="hamburger">
+                        <button class="hamburger__button"></button>
+                    </div>
+
+                    <nav class="main-nav">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item"><a class="main-nav__link" href="#">Информация</a></li>
+                            <li class="main-nav__item"><a class="main-nav__link" href="#">Возможности</a></li>
+                            <li class="main-nav__item"><a class="main-nav__link" href="#">Отзывы</a></li>
+                            <li class="main-nav__item"><a class="main-nav__link" href="#">Стоимость</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="page-header__title">
+                    Блог путешественников, пользователей Пинк
+                </div>
             </div>
-            
-            <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">информация</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">возможности</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">отзывы</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">стоимость</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="page-header__title">
-            Блог путешественников, пользователей Пинк
-        </div>
     </header>
     
     <div class="content-blog">
         
         <section class="blog-item">
-            <h1 class="blog-item__title"><a href="#">Антон и Надя в Тайланде</a></h1>
+            <h1 class="blog-item__title"><a class="blog-item__title-link" href="#">Антон и Надя в Тайланде</a></h1>
             <p class="blog-item__date">Опубликовано: <span>6</span> <span>месяцев</span> назад</p>
             <p class="blog-item__text">Читайте рассказ о том, как семейная пара посещала Тайланд, стараясь максимально избегать 
             избитых туристических мест и районов.</p>
         </section>
     
         <section class="blog-item">
-            <h1 class="blog-item__title"><a href="#">Гастрольный тур «Кубанских борщеваров»</a></h1>
+            <h1 class="blog-item__title"><a class="blog-item__title-link" href="#">Гастрольный тур «Кубанских борщеваров»</a></h1>
             <p class="blog-item__date">Опубликовано: <span>5</span> <span>лет</span> назад</p>
             <p class="blog-item__text">Возрождение культурных традиций уже не за горами. Фолк-металл-рэп-группа из столицы Кубани 
             провела весь год в гастролях по России и ближнему (а также среднему) зарубежью.</p>
         </section>
     
         <section class="blog-item">
-            <h1 class="blog-item__title"><a href="#">Чета Болонских в Париже</a></h1>
+            <h1 class="blog-item__title"><a class="blog-item__title-link" href="#">Чета Болонских в Париже</a></h1>
             <p class="blog-item__date">Опубликовано: <span>100</span> <span>лет</span> назад</p>
             <p class="blog-item__text">Невероятные приключения русских во Франции. Интриги, предательства, погони и, разумеется, 
         убийства. Читайте криминально-исторический трактат в двух томах.</p>
         </section>
     
         <section class="blog-item">
-            <h1 class="blog-item__title"><a href="#">Путешествие на яхте сеньора Христофора</a></h1>
+            <h1 class="blog-item__title"><a class="blog-item__title-link" href="#">Путешествие на яхте сеньора Христофора</a></h1>
             <p class="blog-item__date">Опубликовано: <span>523</span> <span>года</span> назад</p>
             <p class="blog-item__text">Группа испанцев отдыхала на яхте, но они даже не представляли, какие открытия ждут их впереди и чем это обернется для всего человечества!</p>
         </section>
     
         <ul class="blog-pagination">
-            <li class="blog-pagination__item"><a class="blog-pagination__link" href="#">1</a></li>
+            <li class="blog-pagination__item blog-pagination__item--active"><a class="blog-pagination__link" href="#">1</a></li>
             <li class="blog-pagination__item"><a class="blog-pagination__link" href="#">2</a></li>
             <li class="blog-pagination__item"><a class="blog-pagination__link" href="#">3</a></li>
             <li class="blog-pagination__item"><a class="blog-pagination__link" href="#">4</a></li>
@@ -65,17 +76,25 @@
     </div>
         
     <footer class="main-footer">
-        <img src="http://placehold.it/160x50" class="main-footer__logo" alt="">
+        <div class="main-footer__logo-wrapper">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="img/logotype-blue-desktop.svg" alt="pink logo"> 
+                <img src="img/logotype-blue-tablet.svg" alt="pink logo" width="146" height="40">
+            </picture>
+        </div>
+            
         <div class="main-footer__social-wrapper">
-            <a href="https://twitter.com" class="social-btn--twitter"><i></i></a>
-            <a href="https://fb.com" class="social-btn--facebook"></a><i></i>
-            <a href="https://youtube.com" class="social-btn--youtube"><i></i></a>
+            <a href="https://twitter.com" class="social-btn social-btn--twitter"><i></i></a>
+            <a href="https://fb.com" class="social-btn social-btn--facebook"></a><i></i>
+            <a href="https://youtube.com" class="social-btn social-btn--youtube"><i></i></a>
         </div>
         <div class="main-footer__copyright-wrapper">
             <span class="main-footer__copyright-span">Разработано</span>
-            <a href="http://htmlacademy.ru" class="main-footer__copyright-link"><i></i></a>
+            <a href="http://htmlacademy.ru" class="main-footer__copyright-link">
+                <img src="img/htmlacademy.svg" alt="htmlacademy" width="27" height="34">
+            </a>
         </div>        
-    </footer>
+    </footer>    
     
 </body>
 </html>

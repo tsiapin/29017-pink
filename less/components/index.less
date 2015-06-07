@@ -1,0 +1,613 @@
+.main-content{
+    padding-top:40px;
+    
+    &__title-wrapper{
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom:110px;
+        
+    }
+    
+    &__title{
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-weight: lighter;
+        
+        &:last-child{
+        margin-bottom: 0;
+        }
+    }
+}
+
+.information-item{
+    padding-bottom: 30px;
+
+    &__wrapper{
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-bottom: 290px;
+        background-image: url("../img/screen-mobile-3.png");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    
+    &__title{
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: bold;
+        margin-top: 0;
+    
+    }
+    
+    &__text{
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 0;    
+    }
+}
+
+.index-timer{
+    
+    &__wrapper{
+        display: none;
+    }
+}
+
+.index-review{
+    padding-top: 40px;
+
+    &__name{
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: bold;
+        font-style: normal;
+    }
+    
+    &__descr{
+        display: none;
+    }
+    
+    &__quote{
+        font-size: 14px;
+        line-height: 30px;
+        margin:0;
+        padding-top:15px;
+        padding-bottom:30px;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    
+    &__list-wrapper{
+        padding-bottom: 130px;
+    }
+    
+    &__list{
+        min-height: 13px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 0;
+    }
+    
+    &__item{
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5%;
+        width: 7px;
+        height: 7px;
+        background-color: @carousel-body;
+        border-radius: 50%;
+        
+        &--active{
+            background-color: @carousel-body-act;
+            border: 3px solid @carousel-border-act;
+            border-radius: 50%;
+        }
+    }
+}
+
+.index-price{
+    
+    &__table-wrapper{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        min-height: 285px;
+        }
+
+    &__table{
+        width: 264%;
+        position: absolute;
+        top: 0;
+        left: -112%;
+        border-collapse: collapse;
+        font-size: 14px;
+        line-height: 30px;
+        text-transform: uppercase;
+        text-align: left;
+    }
+    
+    &__table-cell{
+        padding-left: 3%;
+        padding-right: 3%;
+        border: 2px solid @table-border;
+        
+        &--best-price{
+            padding: 0;
+            border: 2px solid @table-border;
+        }
+        
+        &--hit{
+            position: relative;
+            width: 100%;
+            height: 95px;
+        }
+        
+        &--hit-logo{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    
+    &__table-tr-first{
+        height: 100px;
+        background-color: @header-menu;
+    }
+    
+    &__table-tr{
+        height: 60px;
+    }
+    
+    &__span-tariff{
+        display: block; 
+        padding-top: 15px;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    &__span-price{
+        display: block;
+        color:white;
+        font-size: 24px;
+        text-align: center;
+        font-weight: lighter;
+    }
+    
+    &__list-wrapper{
+        padding-top: 40px;
+        padding-bottom: 85px;
+    }
+    
+    &__list{
+        min-height: 13px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 0;
+    }
+    
+    &__item{
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5%;
+        width: 7px;
+        height: 7px;
+        background-color: @carousel-body;
+        border-radius: 50%;
+        
+        &--active{
+            background-color: @carousel-body-act;
+            border: 3px solid @carousel-border-act;
+            border-radius: 50%;
+        }
+        
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+
+@media (min-resolution: 2dppx){
+  
+}
+
+@media (min-resolution: 3dppx){
+  
+}
+
+
+@media (min-width: @tablet){
+    .main-content{
+
+        &__title-wrapper{
+            padding-left: 7%;
+            padding-right: 7%;
+        }
+
+        &__title{
+            font-size: 40px;
+            line-height: 40px;
+
+            &:last-child{
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+        }
+    }
+
+    .information-item{
+
+        &__wrapper{
+            width: 44%;
+            min-height: 421px;
+            padding-top: 60px;;
+            padding-bottom: 0;
+            padding-left: 50%;
+            padding-right: 6%;
+            margin: 0;
+            margin-bottom: 55px;;
+            background-image: url("../img/iphone-screen-tablet-3@1x.png");
+            background-position: left 6% bottom;
+        }
+
+        &__title{
+            text-align: left;
+        }
+
+        &__text{   
+            text-align: left;
+        }
+
+    }
+    
+    .index-timer{
+        
+        float: right;
+        width: 44%;
+        padding-right: 6%;
+        
+        &__wrapper{
+            display: block;
+        }
+        
+        &__logo{
+            float: left;
+            width: 38%;
+            margin-left: 6%;
+            margin-right: 6%;
+            min-height: 300px;
+            background-image: url("../img/timer.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+        }
+        
+        &__title{
+            text-align: left;
+            font-size: 30px;
+            line-height: 36px;
+        }
+        
+        &__text{
+            text-align: left;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        
+        &__link{
+            text-align: left;
+            text-decoration: underline;
+            display: block;
+            color: @blog-pag;
+            
+        }
+    }
+
+    .index-review{
+        position: relative;
+
+        &__name{
+            position: absolute;
+            font-size: 20px;
+            top: 180px;
+            left: 50%;
+            margin-left: -85px;
+        }
+        
+        &__descr{
+            display: block;
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            margin-left: -85px;
+            font-size: 14px;
+            line-height: 30px;
+        }
+
+        &__quote{
+            font-size: 18px;
+            padding-bottom: 135px;
+        }
+
+        &__list-wrapper{
+            padding-bottom: 100px;
+        }
+
+        &__list{
+            
+        }
+
+        &__item{
+
+            &--active{
+            }
+            
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+
+    .index-price{
+        margin-bottom: 110px;
+
+        &__table-wrapper{
+            position: static; 
+            overflow: visible;
+            width: 88%;
+            padding-left: 6%;
+            padding-right: 6%;
+        }
+
+        &__table{
+            position: static;
+            width: 100%;
+        }
+
+        &__table-cell{
+            width: 25%;
+            
+            &:first-child{
+                background-color: white;
+            }
+
+            &--best-price{
+            }
+
+            &--hit{
+                height: 75px;
+                padding-top: 15px;
+            }
+
+            &--hit-logo{
+                top: -4px;
+            }
+        }
+        
+        &__table-cell-text{
+            display: none;
+        }
+
+        &__table-tr-first{
+        }
+
+        &__table-tr{
+        }
+
+        &__span-tariff{
+            padding-top: 0;
+            font-size: 16px;
+        }
+
+        &__span-price{
+            font-size: 18px;
+        }
+
+        &__list-wrapper{
+            display: none;
+        }
+
+        &__list{
+        }
+
+        &__item{
+
+            &--active{
+            }
+
+            &:last-child{
+            }
+        }
+    }
+}
+
+@media (min-width: @tablet),
+    (min-resolution: 2dppx){
+  
+}
+
+@media (min-width: @tablet),
+    (min-resolution: 3dppx){
+ 
+}
+
+
+@media (min-width: @desktop){
+    .main-content{
+
+        &__title-wrapper{
+        }
+
+        &__title{
+            
+
+            &:last-child{
+                padding-left: 22%;
+                padding-right: 22%;
+            }
+        }
+    }
+
+    .information-item{
+        display: inline-block;
+        vertical-align: top;
+        width: 25%;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 370px;
+        background-image: url("../img/iphone-screen-desktop-1@1x.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 292px contain;
+        
+        &:nth-child(2){
+            background-image: url("../img/iphone-screen-desktop-2@1x.png");
+        }
+        
+        &:nth-child(3){
+            background-image: url("../img/iphone-screen-desktop-3@1x.png");
+        }
+
+        &__wrapper{
+            width: 100%;
+            padding: 0;
+            padding-left: 5px;
+            padding-right: 5px;
+            background: none;
+        }
+
+        &__title{
+            font-size: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        &__text{  
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+    }
+    
+    .index-timer{
+        width: 55%;
+        padding: 0;
+        padding-right: 10%;
+    
+        &__logo{
+            margin: 0;
+            margin-left: 5%;
+            width: 25%;            
+        }
+        
+        &__title{
+            margin-top: 70px;
+        }
+        
+        &__wrapper{
+            padding-bottom: 60px;
+            background-color: #f2f2f2;
+        }
+    }
+
+    .index-review{
+        padding-top: 190px;
+
+        &__name{
+            top: 340px;
+        }
+        
+        &__descr{
+            top: 360px;
+        }
+
+        &__quote{
+            width: 710px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 290px;
+        }
+
+        &__list-wrapper{
+            display: none;
+        }
+
+        &__list{
+            
+        }
+
+        &__item{
+
+            &--active{
+            }
+        }
+    }
+
+    .index-price{
+
+        &__table-wrapper{
+            }
+
+        &__table{
+        }
+
+        &__table-cell{
+
+            &--best-price{
+            }
+
+            &--hit{
+            }
+
+            &--hit-logo{
+            }
+        }
+
+        &__table-tr-first{
+        }
+
+        &__table-tr{
+        }
+
+        &__span-tariff{
+        }
+
+        &__span-price{
+        }
+
+        &__list-wrapper{
+        }
+
+        &__list{
+        }
+
+        &__item{
+
+            &--active{
+            }
+
+            &:last-child{
+            }
+        }
+    }
+}
+
+@media (min-width: @desktop),
+    (min-resolution: 2dppx){
+ 
+}
+
+@media 
+    (min-width: @desktop),
+    (min-resolution: 3dppx){
+        
+}
+

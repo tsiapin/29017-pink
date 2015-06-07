@@ -1,0 +1,184 @@
+.content-blog{
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.blog-item{
+    border-bottom: 2px solid @blog-sec;
+    
+    &:nth-child(4){
+        border: none;
+        padding-bottom: 50px;
+    }
+
+    &__title{
+        margin:0;
+        padding-top: 20px;
+        text-align: left;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    
+    &__title-link{
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: bold;
+        color: @blog;
+        
+        &:hover{
+            color: @blog;
+        }
+        
+        &:active{
+            color: @blog;
+        }
+    }
+    
+    &__date{
+        margin: 0;
+        font-size: 12px;
+        line-height: 27px;
+        color: @blog-date;
+        text-transform: uppercase;
+        text-align: left;
+    }
+    
+    &__text{
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 14px;
+        line-height: 27px;
+        color: @blog;
+        text-align: left;
+    
+    }
+}
+
+.blog-pagination{
+    list-style: none;
+    font-size: 0;
+    padding: 0;
+    
+    
+    &__item{
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 2%;
+        width: 60px;
+        min-height: 60px;
+        border: 2px solid @blog-sec;
+        
+        &--active{
+            border-color: @blog-pag;
+        }
+        
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    
+    &__link{
+        display: block;
+        padding-top:10px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        color: @blog;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+    
+    &:hover{
+    
+    }
+    
+    &:active{
+    
+    }
+}
+
+@media (min-width: @tablet){
+    
+    .content-blog{
+        padding-left: 14%;
+        padding-right: 14%;
+        padding-top: 45px;
+    }
+    
+    .blog-item{
+        padding-top: 45px;
+        padding-bottom: 45px;        
+        border-bottom-style: dotted;
+        position: relative;
+        
+        &::before{
+            content: " ";  
+            display: block;
+            position: absolute;
+            left: -60px;
+            top:50px;
+            margin-right: -13px;            
+            width: 28px; 
+            height: 26px;
+            background-image: url("../img/blog-post-icon.svg");  
+            background-repeat: no-repeat;
+        }
+        
+        &__title{
+            padding-top: 0;
+        }
+        
+        &__text{
+            padding-bottom: 0;
+        }
+    }
+    
+    .blog-pagination{
+        padding-bottom: 50px;
+    }
+}
+
+@media (min-width: @desktop){
+    .blog-item{
+        
+        &::before{
+            top: 55px;
+        }
+    
+        &__title{
+            font-size: 27px;
+            line-height: 30px;
+        }
+        
+        &__date{
+            font-size: 14px;
+            line-height: 30px;
+        }
+        
+        &__text{
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+    
+    .blog-pagination{
+        position: relative;
+        text-align: left;
+        padding-bottom: 35px;
+        
+        &::before{
+            position: absolute;
+            left: -60px;
+            top: 20px;
+            content: "СТР.";
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        &__item{
+            text-align: center;
+        }
+    }
+}
