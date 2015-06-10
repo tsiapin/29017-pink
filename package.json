@@ -1,30 +1,14 @@
 {
   "name": "29017-pink",
-  "version": "0.0.1",
-  "description": "Обучающий проект «pink» от HTML Academy",
   "private": true,
-  "main": "Gruntfile.js",
-  "scripts": {
-    "test": "grunt test",
-    "pregosha": "npm install",
-    "gosha": "grunt gosha --force"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/up-htmlacademy/29017-pink.git"
-  },
-  "author": "Barys Tsiapin",
-  "bugs": {
-    "url": "https://github.com/up-htmlacademy/29017-pink/issues"
-  },
-  "homepage": "https://github.com/up-htmlacademy/29017-pink",
-  "dependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-copy": "^0.8.0",
+  "devDependencies": {
+    "grunt-autoprefixer": "^3.0.1",
+    "grunt-combine-media-queries": "^1.0.19",
     "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-imagemin": "^0.9.4",
     "grunt-contrib-less": "^1.0.1",
-    "grunt-githooks": "^0.3.1",
-    "grunt-lintspaces": "^0.6.2",
-    "grunt-sass": "^0.18.1"
+    "load-grunt-tasks": "^3.2.0"
   }
 }
