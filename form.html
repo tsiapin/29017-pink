@@ -57,16 +57,17 @@
             <label class="form__label" for="patronymic">отчество:</label>
             <input class="form__text-field" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
             
-            <p class="form__text">с каким приложением путешествовали?*</p>
+            <div class="form__radio-wrapper">
+                <p class="form__text">с каким приложением путешествовали?*</p>
+                <input class="form__radio" type="radio" name="app" id="ios" value="ios" checked>
+                <label class="form__radio-label" for="ios">Pink для iOS</label>
             
-            <input class="form__radio" type="radio" name="app" id="ios" value="ios" checked>
-            <label class="form__radio-label" for="ios">Pink для iOS</label>
+                <input class="form__radio" type="radio" name="app" id="android" value="android">
+                <label class="form__radio-label" for="android">Pink на Android</label>
             
-            <input class="form__radio" type="radio" name="app" id="android" value="android">
-            <label class="form__radio-label" for="android">Pink на Android</label>
-            
-            <input class="form__radio" type="radio" name="app" id="winphone" value="winphone">
-            <label class="form__radio-label" for="winphone">Windows Phone</label>
+                <input class="form__radio" type="radio" name="app" id="winphone" value="winphone">
+                <label class="form__radio-label" for="winphone">Windows Phone</label>
+            </div>    
             
             <p class="form__text">когда вы путешествовали?*</p>
             
